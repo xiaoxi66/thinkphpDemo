@@ -1,0 +1,82 @@
+/*
+ * colors variables
+ */
+.travel-note-lists {
+  margin-top: 20px;
+}
+
+.travel-note-lists .note-item .processor {
+  width: 3px;
+  position: relative;
+  background-color: #ddd;
+  padding-right: 4px;
+}
+
+.travel-note-lists .note-item .processor .circle {
+  position: absolute;
+  left: -9px;
+  top: -2px;
+}
+
+.travel-note-lists .note-item .processor .circle .points {
+  color: #50b400;
+  font-size: 20px;
+}
+
+.travel-note-lists .note-item .note-detail {
+  padding-left: 25px;
+}
+
+.travel-note-lists .note-item .note-detail .note-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.travel-note-lists .note-item .note-detail .note-content img {
+  width: 135px;
+}
+
+.travel-note-lists .note-item .note-detail .note-content .note-text h5 {
+  overflow: hidden;
+  width: 515px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 34px;
+  font-size: 18px;
+}
+
+.travel-note-lists .note-item .note-detail .note-content .note-text .note-desc {
+  position: relative;
+  line-height: 22px;
+  max-height: 44px;
+  overflow: hidden;
+}
+
+.travel-note-lists .note-item .note-detail .note-content .note-text .note-desc:after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  padding-left: 40px;
+  background: -webkit-linear-gradient(left, transparent, #fff 79%);
+  background: -o-linear-gradient(right, transparent, #fff 79%);
+  background: -moz-linear-gradient(right, transparent, #fff 79%);
+  background: linear-gradient(to right, transparent, #fff 79%);
+}
+
+.travel-note-lists .note-item .note-detail .note-content .note-text .pull-right {
+  color: #9a9a9a;
+  font-size: 12px;
+}
+
+.travel-note-lists .note-item .note-detail .note-content .note-text .pull-right span {
+  padding-left: 15px;
+}
+
+.travel-note-lists .note-item .note-detail .note-content .note-text .pull-right .glyphicon {
+  color: #9a9a9a;
+}
+
+.travel-note-lists .note-item .note-detail .note-content .note-text .pull-right .fa {
+  color: #bbb;
+}

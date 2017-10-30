@@ -1,0 +1,30 @@
+/*
+ * colors variables
+ */
+.travel-note-commment {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.travel-note-commment .inputWrap {
+  width: 100%;
+  position: relative;
+}
+
+.travel-note-commment .inputWrap textarea {
+  width: 100%;
+  height: 120px;
+}
+
+.travel-note-commment .inputWrap .btn-submit {
+  padding: 6px 20px;
+  margin-top: 10px;
+  letter-spacing: 6px;
+  text-align: center;
+  background-color: #f63;
+  color: #fff;
+}
+
+.travel-note-commment .inputWrap .btn-submit:hover {
+  background-color: #D45B26;
+}

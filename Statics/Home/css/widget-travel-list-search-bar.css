@@ -1,0 +1,114 @@
+/*
+ * colors variables
+ */
+.travel-search {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.travel-search .main-search {
+  display: inline-block;
+  border: 2px solid #f63;
+  overflow: hidden;
+}
+
+.travel-search .main-search .dropdown-choose {
+  float: left;
+  width: 90px;
+}
+
+.travel-search .main-search .dropdown-choose #dropdown {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.travel-search .main-search .dropdown-choose #dropdown .choosed {
+  border-right: 1px solid #ccc;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.travel-search .main-search .dropdown-choose #dropdown .arrow-down {
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  font-size: 10px;
+  color: #666;
+}
+
+.travel-search .main-search .dropdown-choose #dropdown ul {
+  display: none;
+  position: fixed;
+  margin-left: -2px;
+  z-index: 9999;
+  border-top: 1px solid #ccc;
+  border-left: 2px solid #f63;
+  border-right: 2px solid #f63;
+  border-bottom: 2px solid #f63;
+  background-color: #fafafa;
+}
+
+.travel-search .main-search .dropdown-choose #dropdown ul li {
+  padding: 3px 24px 3px 23px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.travel-search .main-search .dropdown-choose #dropdown ul li a {
+  display: block;
+  color: #666;
+  text-decoration: none;
+}
+
+.travel-search .main-search .dropdown-choose #dropdown ul li:hover {
+  background-color: #ddd;
+}
+
+.travel-search .main-search .search-area {
+  width: 668px;
+}
+
+@media (max-width: 1200px) {
+  .travel-search .main-search .search-area {
+    width: 590px !important;
+  }
+}
+
+.travel-search .main-search .search-area .input-search {
+  width: 505px;
+  height: 32px;
+  padding-left: 10px;
+  border: 0;
+  border-color: #f63;
+  border-radius: 0;
+  line-height: 32px;
+}
+
+@media (max-width: 1200px) {
+  .travel-search .main-search .search-area .input-search {
+    width: 390px !important;
+  }
+}
+
+.travel-search .main-search .search-area .search-btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  float: right;
+  border-color: #f63;
+  border-radius: 0;
+  line-height: 32px;
+  font-size: 16px;
+  background-color: #f63;
+  color: #fff;
+}
+
+.travel-search .hot-words {
+  float: right;
+  margin-left: 10px;
+  line-height: 32px;
+}
+
+.travel-search .hot-words a {
+  padding-left: 8px;
+}

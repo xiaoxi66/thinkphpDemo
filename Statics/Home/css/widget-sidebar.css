@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*
+ * colors variables
+ */
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 40px;
+  min-height: 100%;
+  background-color: #333;
+  color: #666;
+}
+
+.sidebar li {
+  position: relative;
+  line-height: 38px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.sidebar li a {
+  color: #666;
+}
+
+.sidebar li.active {
+  background-color: #f63;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.sidebar li.active a {
+  color: #fff;
+}
+
+.sidebar li .hidetext {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 80px;
+  font-size: 14px;
+  background-color: #f63;
+}
+
+.sidebar li .hidetext a {
+  color: #fff;
+}
+
+.sidebar .slider-top {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.sidebar .slider-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.sidebar .slider-bottom .cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  background: #f63;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sidebar .slider-bottom .cd-top .gotop {
+  color: #fff;
+}
+
+.sidebar .slider-bottom .cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.sidebar .slider-bottom .cd-top.cd-fade-out:hover {
+  /* 如果用户继续向下滚动,这个按钮的透明度会变得更低 */
+  opacity: 1;
+  background-color: #f63;
+}

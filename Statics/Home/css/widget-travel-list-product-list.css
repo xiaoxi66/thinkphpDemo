@@ -1,0 +1,228 @@
+/*
+ * colors variables
+ */
+.product-list {
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #666;
+}
+
+.product-list .product {
+  padding: 15px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-list .product:last-child {
+  border-bottom: 0;
+}
+
+.product-list .product:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.product-list .product .detailtime {
+  margin-top: 10px;
+}
+
+.product-list .product .media .media-left {
+  position: relative;
+}
+
+.product-list .product .media .media-left .mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+
+.product-list .product .media .media-left .mark.free {
+  background-color: #50b400;
+}
+
+.product-list .product .media .media-left p {
+  position: relative;
+  bottom: 30px;
+  left: 0;
+  padding: 5px;
+  margin-bottom: 0;
+  text-transform: none;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+.product-list .product .media .media-left:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.product-list .product .media .media-body {
+  padding: 0 10px;
+}
+
+.product-list .product .media .media-body .datemore:hover {
+  color: #f63;
+}
+
+.product-list .product .media .media-body .datemore .fa-sort-down {
+  line-height: 16px;
+  vertical-align: top;
+}
+
+.product-list .product .media .media-body .datemore .fa-sort-up {
+  line-height: 16px;
+  vertical-align: middle;
+}
+
+.product-list .product .media .media-body a {
+  color: #f63;
+  text-decoration: none;
+}
+
+.product-list .product .media .media-body h4 {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.product-list .product .media .media-body h4 .title {
+  font-weight: bold;
+  font-size: 18px;
+  text-overflow: hidden;
+  width: 600px;
+}
+
+.product-list .product .media .media-body p {
+  margin-top: 3px;
+  margin-bottom: 0;
+  line-height: 22px;
+  font-size: 12px;
+}
+
+.product-list .product .media .media-body p em {
+  padding: 2px;
+  margin-right: 5px;
+  border: 1px solid #f63;
+  border-radius: 3px;
+  color: #f63;
+  font-style: normal;
+}
+
+.product-list .product .media .media-body p em .tooltip-arrow {
+  border-right-color: #9a9898;
+  border-left-color: #9a9898;
+}
+
+.product-list .product .media .media-body p em .in {
+  opacity: 1;
+}
+
+.product-list .product .media .media-body p em .tooltip-inner {
+  line-height: 26px;
+  border-radius: 0;
+  color: #333;
+  text-align: left;
+  background-color: #fafafa;
+  box-shadow: 0 1px 5px #9e9e9e;
+}
+
+.product-list .product .media .media-body p .city-icon {
+  color: #50b400;
+}
+
+.product-list .product .media .media-body p .theme-color {
+  color: #f63;
+}
+
+.product-list .product .media .media-right {
+  display: table-cell;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 198px;
+  text-align: center;
+}
+
+.product-list .product .media .media-right p em {
+  font-style: normal;
+  color: #f63;
+}
+
+.product-list .product .media .media-right .btn {
+  padding: 8px 30px;
+  font-size: 18px;
+}
+
+.product-list .product .media .media-right .price {
+  font-size: 30px;
+  color: #f63;
+}
+
+.product-list .product .media .media-right .btn-detail {
+  font-size: 18px;
+  background-color: #f63;
+}
+
+.product-list .product .media .media-right .remark {
+  font-size: 12px;
+}
+
+.product-list .product .media .media-right .remark .theme-color {
+  color: #f63;
+}
+
+.pages {
+  margin-top: 15px;
+}
+
+.pages .pagination {
+  float: left;
+  margin: 0;
+}
+
+.pages .pagination li a {
+  border-radius: 0;
+  margin-right: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+.pages .pagination li.active a {
+  background-color: #4c5a65;
+  border-color: #4c5a65;
+  color: #fff;
+}
+
+.pages .gopage {
+  float: left;
+}
+
+.pages .gopage label {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.pages .gopage .current_page {
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  width: 40px;
+  text-align: center;
+}
+
+.pages .gopage .btn-go {
+  padding: 5px 12px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  color: #666;
+}

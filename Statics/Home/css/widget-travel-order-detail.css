@@ -1,0 +1,43 @@
+/*
+ * colors variables
+ */
+.travel-order-detail {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.travel-order-detail .order-item {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.travel-order-detail .order-item .title {
+  padding-left: 10px;
+  border-bottom: 1px solid #ddd;
+  line-height: 32px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.travel-order-detail .order-item .info {
+  padding: 15px;
+}
+
+.travel-order-detail .order-item .info .table-order td {
+  border-top: 0;
+}
+
+.travel-order-detail .order-item .info .table-product td {
+  vertical-align: middle;
+}
+
+.travel-order-detail .order-item .info .payneed {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.travel-order-detail .order-item .info .payneed .pull-left {
+  line-height: 34px;
+}

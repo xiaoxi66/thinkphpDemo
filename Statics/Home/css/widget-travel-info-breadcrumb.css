@@ -1,0 +1,14 @@
+.travel-breadcrumb {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.travel-breadcrumb span {
+  display: inline;
+}
+
+.travel-breadcrumb .breadcrumb {
+  display: inline;
+  border-radius: 0;
+  background-color: transparent;
+}

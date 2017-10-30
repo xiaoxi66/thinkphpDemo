@@ -1,0 +1,34 @@
+/*
+ * colors variables
+ */
+.travel-note-infohead {
+  position: relative;
+}
+
+.travel-note-infohead .note-intro {
+  position: absolute;
+  top: 10%;
+}
+
+.travel-note-infohead .note-intro .note-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.travel-note-infohead .note-intro .note-title .release-time {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.travel-note-infohead .note-intro .author-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.travel-note-infohead .note-intro .author-info .media-body span {
+  display: block;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}

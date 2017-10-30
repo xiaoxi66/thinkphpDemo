@@ -1,0 +1,30 @@
+/*
+ * colors variables
+ */
+.travel-note-other h4 {
+  line-height: 36px;
+  border-bottom: 2px dotted #ddd;
+  font-size: 16px;
+  color: #f63;
+}
+
+.travel-note-other .other-note-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #F3F2F2;
+}
+
+.travel-note-other .other-note-item img {
+  width: 90px;
+}
+
+.travel-note-other .other-note-item .media-right .note-title {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.travel-note-other .other-note-item .media-right .note-date {
+  color: #666;
+}

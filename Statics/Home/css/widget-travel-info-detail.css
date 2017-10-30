@@ -1,0 +1,196 @@
+/*
+ * colors variables
+ */
+.info-detail {
+  float: left;
+  _display: inline-block;
+  padding: 15px;
+  padding-left: 0;
+  width: 420px;
+  font-size: 12px;
+  color: #4c5a65;
+}
+
+.info-detail .productid {
+  line-height: 36px;
+  margin-bottom: 6px;
+}
+
+.info-detail hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-detail .operate {
+  float: right;
+  padding-right: 15px;
+}
+
+.info-detail .operate .glyphicon {
+  margin-right: 2px;
+  color: #f63;
+}
+
+.info-detail .operate em {
+  font-style: normal;
+  margin-left: 15px;
+}
+
+@media (max-width: 1200px) {
+  .info-detail {
+    width: 400px;
+  }
+}
+
+.info-detail .price {
+  padding: 15px;
+  background-color: #fff4e6;
+  color: #f63;
+}
+
+.info-detail .price a {
+  text-decoration: none;
+}
+
+.info-detail .price .lowprice {
+  color: #f63;
+}
+
+.info-detail .price .money {
+  color: #f63;
+  font-size: 30px;
+}
+
+.info-detail .intro {
+  overflow: hidden;
+  position: relative;
+}
+
+.info-detail .intro .setting {
+  float: left;
+  width: 50%;
+}
+
+.info-detail .intro .preorder {
+  margin-right: 25px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.info-detail .intro .preorder .btn-preorder {
+  margin-top: 25px;
+  padding: 20px 15px;
+  background-color: #f63;
+  color: #fff;
+  font-size: 16px;
+}
+
+.info-detail .intro ul {
+  margin-bottom: 0;
+}
+
+.info-detail .intro ul li {
+  line-height: 32px;
+  padding: 3px 0;
+}
+
+.info-detail .intro ul li .picker-type {
+  display: inline-block;
+}
+
+.info-detail .intro ul li .people-num {
+  display: inline-block;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.info-detail .intro ul li .people-num .tool-btn {
+  width: 20px;
+  height: 26px;
+  padding: 0 4px;
+  color: #50b400;
+}
+
+.info-detail .intro ul li .people-num .tool-btn.minus {
+  padding-left: 4px;
+  padding-right: 0;
+}
+
+.info-detail .intro ul li .people-num .tool-btn.plus {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+.info-detail .intro ul li .people-num .num {
+  width: 33px;
+  height: 33px;
+  box-sizing: border-box;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  display: inline-block;
+  border-top: 0;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.info-detail .intro ul li .glyphicon-ok-circle {
+  color: #f63;
+}
+
+.info-detail .intro ul li .person {
+  letter-spacing: 24px;
+}
+
+.info-detail .intro ul li .allprice {
+  color: #f63;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info-detail .intro ul li select option span {
+  color: #f63;
+}
+
+.info-detail .intro ul li.remark {
+  color: #666;
+}
+
+.info-detail .intro ul li input.godate {
+  line-height: 28px;
+  height: 28px;
+  padding-left: 8px;
+  margin: 0;
+  border: 1px solid #ddd;
+  width: 100px;
+}
+
+.info-detail .intro ul li .marks {
+  box-sizing: border-box;
+  padding: 2px 5px 2px 0;
+  border: 1px solid #f63;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.info-detail .intro ul li .marks em {
+  padding: 2px 5px;
+  font-style: normal;
+  background-color: #f63;
+  color: #fff;
+}
+
+.info-detail .intro ul li .marks i {
+  padding: 2px 5px;
+  font-style: normal;
+}
+
+.info-detail .intro ul li .btn-cash {
+  padding: 2px 8px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #50b400;
+}

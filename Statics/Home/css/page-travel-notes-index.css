@@ -1,0 +1,367 @@
+/*
+ * colors variables
+ */
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.wrapper .wrapper-content {
+  padding-bottom: 300px;
+}
+
+/*
+ * colors variables
+ */
+.topNavWrapper {
+  font-size: 12px;
+  line-height: 28px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ececec;
+}
+
+.topNavWrapper .navbar {
+  min-height: 28px;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+/*
+ * colors variables
+ */
+header {
+  /*
+     * nav-color, menu-color, mouseover-color
+     */
+}
+
+header a {
+  color: #666;
+}
+
+header a:hover {
+  color: #f63;
+  text-decoration: none;
+}
+
+header .headerWrapper {
+  min-height: 40px;
+  padding: 5px 0;
+}
+
+header .headerWrapper .tel {
+  font-size: 18px;
+  color: #f63;
+}
+
+header .headerWrapper .tel .glyphicon-earphone {
+  border: 2px solid #f63;
+  padding: 4px;
+  border-radius: 13px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+header .menuNavWrapper {
+  background-color: #4c5a65;
+}
+
+header .menuNavWrapper .navbar-nav li {
+  line-height: 36px;
+}
+
+header .menuNavWrapper .navbar-nav li.active {
+  background-color: #f63;
+}
+
+header .menuNavWrapper .navbar-nav li a {
+  color: #fff;
+}
+
+header .menuNavWrapper .navbar-nav li a:hover, header .menuNavWrapper .navbar-nav li a:focus {
+  background-color: #f63;
+}
+
+/*
+ * colors variables
+ */
+footer {
+  height: 289px;
+  margin-top: -289px;
+  background-color: #ddd;
+}
+
+footer .foot-box {
+  padding-top: 25px;
+  height: 289px;
+}
+
+footer dl {
+  width: 12%;
+  float: left;
+  margin-right: 10px;
+}
+
+footer dl dt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer dl dd {
+  font-size: 14px;
+  color: #666;
+  line-height: 28px;
+}
+
+footer dl:last-child, footer dl:nth-last-child(2) {
+  float: right;
+}
+
+.travel-search-imgscroll {
+  position: relative;
+}
+
+.travel-search-imgscroll .carousel {
+  overflow: hidden;
+}
+
+.travel-search-imgscroll .search-box {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+
+.travel-search-imgscroll .search-box .search-area {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control::-webkit-input-placeholder {
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control::-moz-input-placeholder {
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control::-ms-input-placeholder {
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control::input-placeholder {
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .btn-search {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  padding: 0 10px;
+  line-height: 34px;
+  height: 34px;
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .hot-words {
+  width: 500px;
+  margin: 5px auto;
+  text-align: center;
+  color: #F3EDED;
+}
+
+/*
+ * colors variables
+ */
+.travel-tab-lists .nav-tabs li {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.travel-tab-lists .nav-tabs li a {
+  border: 0;
+  background-color: transparent;
+  color: #333;
+}
+
+.travel-tab-lists .nav-tabs li.active a {
+  position: relative;
+  border-bottom: 2px solid #f63;
+  color: #f63;
+}
+
+.travel-tab-lists .nav-tabs li.active a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  width: 2px;
+  height: 2px;
+  border-width: 5px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #f63 transparent;
+}
+
+.travel-tab-lists .nav-tabs li.active a:hover, .travel-tab-lists .nav-tabs li.active a:focus {
+  border: 0;
+  border-bottom: 2px solid #f63;
+}
+
+.travel-tab-lists .tab-content {
+  padding: 0 15px 15px;
+  margin-top: -2px;
+  border: 1px solid #ddd;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1eeee;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-head {
+  overflow: hidden;
+  width: 515px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 34px;
+  font-size: 18px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-head a {
+  text-decoration: none;
+  color: #333;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-head a:hover {
+  color: #f63;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-body {
+  position: relative;
+  max-height: 66px;
+  overflow: hidden;
+  line-height: 22px;
+  color: #666;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author {
+  margin-top: 15px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author .name {
+  color: #f63;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author .name a {
+  color: #f63;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author .looknum {
+  padding-left: 15px;
+  color: #666;
+  font-size: 12px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author span {
+  display: inline-block;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .goodnum {
+  color: #f63;
+  cursor: pointer;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .pagination {
+  float: left;
+  margin: 0;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .pagination li a {
+  margin-right: 5px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .gopage {
+  float: left;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .gopage label {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .gopage .current_page {
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 40px;
+  text-align: center;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .gopage .btn-go {
+  padding: 5px 12px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/*
+ * colors variables
+ */
+.travel-note-authors {
+  border-bottom: 1px solid #ddd;
+}
+
+.travel-note-authors h4 {
+  line-height: 34px;
+  font-size: 16px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.travel-note-authors .authors .autors-item {
+  margin-bottom: 15px;
+}
+
+.travel-note-authors .authors .autors-item .media-left img {
+  width: 80px;
+  height: 80px;
+}
+
+.travel-note-authors .authors .autors-item .media-right span {
+  display: block;
+}
+
+.travel-note-authors .authors .autors-item .media-right .author-name {
+  font-size: 15px;
+}
+
+.travel-note-authors .authors .autors-item .media-right .note-num {
+  font-size: 12px;
+  color: #666;
+}
+
+.notes-content {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}

@@ -1,0 +1,57 @@
+.travel-search-imgscroll {
+  position: relative;
+}
+
+.travel-search-imgscroll .carousel {
+  overflow: hidden;
+}
+
+.travel-search-imgscroll .search-box {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+
+.travel-search-imgscroll .search-box .search-area {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control::-webkit-input-placeholder {
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control::-moz-input-placeholder {
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control::-ms-input-placeholder {
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .form-control::input-placeholder {
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .search-area .btn-search {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  padding: 0 10px;
+  line-height: 34px;
+  height: 34px;
+  color: #F3EDED;
+}
+
+.travel-search-imgscroll .search-box .hot-words {
+  width: 500px;
+  margin: 5px auto;
+  text-align: center;
+  color: #F3EDED;
+}

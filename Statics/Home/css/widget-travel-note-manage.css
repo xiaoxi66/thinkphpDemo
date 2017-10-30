@@ -1,0 +1,111 @@
+/*
+ * colors variables
+ */
+.travel-note-manage {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.travel-note-manage h4 {
+  margin: 0;
+  line-height: 32px;
+  height: 32px;
+  border-bottom: 2px solid #ddd;
+}
+
+.travel-note-manage .note-content {
+  padding: 15px;
+}
+
+.travel-note-manage .note-item .processor {
+  width: 3px;
+  position: relative;
+  background-color: #ddd;
+  padding-right: 0;
+}
+
+.travel-note-manage .note-item .processor .circle {
+  position: absolute;
+  left: -9px;
+  top: -2px;
+}
+
+.travel-note-manage .note-item .processor .circle .points {
+  color: #50b400;
+  font-size: 20px;
+}
+
+.travel-note-manage .note-item .note-detail {
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.travel-note-manage .note-item .note-detail .note-time {
+  padding-bottom: 5px;
+}
+
+.travel-note-manage .note-item .note-detail .note-text {
+  border-bottom: 1px solid #ddd;
+}
+
+.travel-note-manage .note-item .note-detail .note-text .status {
+  color: red;
+}
+
+.travel-note-manage .note-item .note-detail .note-text .media-head {
+  overflow: hidden;
+  max-width: 580px;
+  width: 580px;
+  line-height: 34px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 580px;
+}
+
+.travel-note-manage .note-item .note-detail .note-text .note-desc {
+  position: relative;
+  line-height: 22px;
+  max-height: 44px;
+  overflow: hidden;
+  color: #666;
+}
+
+.travel-note-manage .note-item .note-detail .note-text .note-desc:after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 40px;
+  background: -webkit-linear-gradient(left, transparent, #fff 79%);
+  background: -o-linear-gradient(right, transparent, #fff 79%);
+  background: -moz-linear-gradient(right, transparent, #fff 79%);
+  background: linear-gradient(to right, transparent, #fff 79%);
+}
+
+.travel-note-manage .note-item .note-detail .note-text .pull-left .photo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.travel-note-manage .note-item .note-detail .note-text .pull-left .author {
+  color: #f63;
+}
+
+.travel-note-manage .note-item .note-detail .note-text .pull-right {
+  color: #9a9a9a;
+  font-size: 12px;
+}
+
+.travel-note-manage .note-item .note-detail .note-text .pull-right span {
+  padding-left: 15px;
+}
+
+.travel-note-manage .note-item .note-detail .note-text .pull-right .glyphicon {
+  color: #9a9a9a;
+}
+
+.travel-note-manage .note-item .note-detail .note-text .pull-right .fa {
+  color: #bbb;
+}

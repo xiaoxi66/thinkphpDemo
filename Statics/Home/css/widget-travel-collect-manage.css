@@ -1,0 +1,47 @@
+/*
+ * colors variables
+ */
+.travel-collect-manage h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 32px;
+  height: 32px;
+  border-bottom: 2px solid #ddd;
+}
+
+.travel-collect-manage .collect-content {
+  padding: 5px 0 10px 10px;
+}
+
+.travel-collect-manage .collect-content .operate {
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.travel-collect-manage .collect-content .products .product-item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.travel-collect-manage .collect-content .products .product-item .inputcheck {
+  float: left;
+  padding-right: 10px;
+}
+
+.travel-collect-manage .collect-content .products .product-item .media-head {
+  font-weight: bold;
+}
+
+.travel-collect-manage .collect-content .products .product-item .btn-preorder {
+  padding: 0 8px;
+  color: #f63;
+  font-size: 13px;
+}
+
+.travel-collect-manage .collect-content .products .product-item .btn-del {
+  font-size: 13px;
+  color: #333;
+}

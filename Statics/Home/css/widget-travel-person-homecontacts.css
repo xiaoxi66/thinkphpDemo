@@ -1,0 +1,44 @@
+/*
+ * colors variables
+ */
+.travel-person-contacts {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.travel-person-contacts .title {
+  margin: 0;
+  line-height: 32px;
+  height: 32px;
+  border-bottom: 2px solid #ddd;
+}
+
+.travel-person-contacts .add {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.travel-person-contacts .add .btn-add {
+  border: 1px solid #f63;
+  background-color: #f63;
+}
+
+.travel-person-contacts .add .btn-add:hover {
+  border: 1px solid #D45B26;
+  background-color: #D45B26;
+}
+
+.travel-person-contacts .contacts-table td, .travel-person-contacts .contacts-table th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.travel-person-contacts .contacts-table .btn-default {
+  padding: 2px 15px;
+  font-size: 12px;
+}
+
+.travel-person-contacts .contacts-table .edit, .travel-person-contacts .contacts-table .del {
+  font-size: 12px;
+}

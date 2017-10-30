@@ -1,0 +1,839 @@
+@charset "UTF-8";
+/*
+ * colors variables
+ */
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.wrapper .wrapper-content {
+  padding-bottom: 300px;
+}
+
+/*
+ * colors variables
+ */
+.topNavWrapper {
+  font-size: 12px;
+  line-height: 28px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ececec;
+}
+
+.topNavWrapper .navbar {
+  min-height: 28px;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+/*
+ * colors variables
+ */
+header {
+  /*
+     * nav-color, menu-color, mouseover-color
+     */
+}
+
+header a {
+  color: #666;
+}
+
+header a:hover {
+  color: #f63;
+  text-decoration: none;
+}
+
+header .headerWrapper {
+  min-height: 40px;
+  padding: 5px 0;
+}
+
+header .headerWrapper .tel {
+  font-size: 18px;
+  color: #f63;
+}
+
+header .headerWrapper .tel .glyphicon-earphone {
+  border: 2px solid #f63;
+  padding: 4px;
+  border-radius: 13px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+header .menuNavWrapper {
+  background-color: #4c5a65;
+}
+
+header .menuNavWrapper .navbar-nav li {
+  line-height: 36px;
+}
+
+header .menuNavWrapper .navbar-nav li.active {
+  background-color: #f63;
+}
+
+header .menuNavWrapper .navbar-nav li a {
+  color: #fff;
+}
+
+header .menuNavWrapper .navbar-nav li a:hover, header .menuNavWrapper .navbar-nav li a:focus {
+  background-color: #f63;
+}
+
+/*
+ * colors variables
+ */
+footer {
+  height: 289px;
+  margin-top: -289px;
+  background-color: #ddd;
+}
+
+footer .foot-box {
+  padding-top: 25px;
+  height: 289px;
+}
+
+footer dl {
+  width: 12%;
+  float: left;
+  margin-right: 10px;
+}
+
+footer dl dt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer dl dd {
+  font-size: 14px;
+  color: #666;
+  line-height: 28px;
+}
+
+footer dl:last-child, footer dl:nth-last-child(2) {
+  float: right;
+}
+
+/*
+ * colors variables
+ */
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 40px;
+  min-height: 100%;
+  background-color: #333;
+  color: #666;
+}
+
+.sidebar li {
+  position: relative;
+  line-height: 38px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.sidebar li a {
+  color: #666;
+}
+
+.sidebar li.active {
+  background-color: #f63;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.sidebar li.active a {
+  color: #fff;
+}
+
+.sidebar li .hidetext {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 80px;
+  font-size: 14px;
+  background-color: #f63;
+}
+
+.sidebar li .hidetext a {
+  color: #fff;
+}
+
+.sidebar .slider-top {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.sidebar .slider-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.sidebar .slider-bottom .cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  background: #f63;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sidebar .slider-bottom .cd-top .gotop {
+  color: #fff;
+}
+
+.sidebar .slider-bottom .cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.sidebar .slider-bottom .cd-top.cd-fade-out:hover {
+  /* 如果用户继续向下滚动,这个按钮的透明度会变得更低 */
+  opacity: 1;
+  background-color: #f63;
+}
+
+.travel-breadcrumb {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.travel-breadcrumb span {
+  display: inline;
+}
+
+.travel-breadcrumb .breadcrumb {
+  display: inline;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+/*
+ * colors variables
+ */
+.travel-info-imgroll {
+  overflow: hidden;
+  padding: 10px;
+  width: 700px;
+  float: left;
+}
+
+@media (max-width: 1200px) {
+  .travel-info-imgroll {
+    width: 500px !important;
+  }
+}
+
+.travel-info-imgroll .slider-pro {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * colors variables
+ */
+.info-detail {
+  float: left;
+  _display: inline-block;
+  padding: 15px;
+  padding-left: 0;
+  width: 420px;
+  font-size: 12px;
+  color: #4c5a65;
+}
+
+.info-detail .productid {
+  line-height: 36px;
+  margin-bottom: 6px;
+}
+
+.info-detail hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-detail .operate {
+  float: right;
+  padding-right: 15px;
+}
+
+.info-detail .operate .glyphicon {
+  margin-right: 2px;
+  color: #f63;
+}
+
+.info-detail .operate em {
+  font-style: normal;
+  margin-left: 15px;
+}
+
+@media (max-width: 1200px) {
+  .info-detail {
+    width: 400px;
+  }
+}
+
+.info-detail .price {
+  padding: 15px;
+  background-color: #fff4e6;
+  color: #f63;
+}
+
+.info-detail .price a {
+  text-decoration: none;
+}
+
+.info-detail .price .lowprice {
+  color: #f63;
+}
+
+.info-detail .price .money {
+  color: #f63;
+  font-size: 30px;
+}
+
+.info-detail .intro {
+  overflow: hidden;
+  position: relative;
+}
+
+.info-detail .intro .setting {
+  float: left;
+  width: 50%;
+}
+
+.info-detail .intro .preorder {
+  margin-right: 25px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.info-detail .intro .preorder .btn-preorder {
+  margin-top: 25px;
+  padding: 20px 15px;
+  background-color: #f63;
+  color: #fff;
+  font-size: 16px;
+}
+
+.info-detail .intro ul {
+  margin-bottom: 0;
+}
+
+.info-detail .intro ul li {
+  line-height: 32px;
+  padding: 3px 0;
+}
+
+.info-detail .intro ul li .picker-type {
+  display: inline-block;
+}
+
+.info-detail .intro ul li .people-num {
+  display: inline-block;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.info-detail .intro ul li .people-num .tool-btn {
+  width: 20px;
+  height: 26px;
+  padding: 0 4px;
+  color: #50b400;
+}
+
+.info-detail .intro ul li .people-num .tool-btn.minus {
+  padding-left: 4px;
+  padding-right: 0;
+}
+
+.info-detail .intro ul li .people-num .tool-btn.plus {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+.info-detail .intro ul li .people-num .num {
+  width: 33px;
+  height: 33px;
+  box-sizing: border-box;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  display: inline-block;
+  border-top: 0;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.info-detail .intro ul li .glyphicon-ok-circle {
+  color: #f63;
+}
+
+.info-detail .intro ul li .person {
+  letter-spacing: 24px;
+}
+
+.info-detail .intro ul li .allprice {
+  color: #f63;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info-detail .intro ul li select option span {
+  color: #f63;
+}
+
+.info-detail .intro ul li.remark {
+  color: #666;
+}
+
+.info-detail .intro ul li input.godate {
+  line-height: 28px;
+  height: 28px;
+  padding-left: 8px;
+  margin: 0;
+  border: 1px solid #ddd;
+  width: 100px;
+}
+
+.info-detail .intro ul li .marks {
+  box-sizing: border-box;
+  padding: 2px 5px 2px 0;
+  border: 1px solid #f63;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.info-detail .intro ul li .marks em {
+  padding: 2px 5px;
+  font-style: normal;
+  background-color: #f63;
+  color: #fff;
+}
+
+.info-detail .intro ul li .marks i {
+  padding: 2px 5px;
+  font-style: normal;
+}
+
+.info-detail .intro ul li .btn-cash {
+  padding: 2px 8px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #50b400;
+}
+
+/*
+ * colors variables
+ */
+.travel-info-tabindex {
+  margin-top: 15px;
+  background-color: #fff;
+  position: relative;
+}
+
+.travel-info-tabindex #subNav {
+  border: 1px solid #e1e1e8;
+  border-bottom: 2px solid #f63;
+  background-color: #f7f7f9;
+}
+
+.travel-info-tabindex #subNav.fixedSubNav {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 1140px;
+}
+
+.travel-info-tabindex #subNav .wrap {
+  margin-bottom: 0;
+  padding-left: 0;
+  line-height: 32px;
+}
+
+.travel-info-tabindex #subNav .wrap #button {
+  display: none;
+  margin-right: 32px;
+  line-height: 48px;
+}
+
+.travel-info-tabindex #subNav .wrap #button .btn-preorder {
+  line-height: 18px;
+  background-color: #f63;
+  color: #fff;
+}
+
+.travel-info-tabindex #subNav .wrap li {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: -6px;
+  border-right: 1px solid #ddd;
+}
+
+.travel-info-tabindex #subNav .wrap li:first-child {
+  margin-left: 0;
+}
+
+.travel-info-tabindex #subNav .wrap li.adv_active {
+  background-color: #f63;
+}
+
+.travel-info-tabindex #subNav .wrap li.adv_active a {
+  color: #fff;
+}
+
+.travel-info-tabindex #subNav .wrap li a {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #333;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.travel-info-tabindex .scroll {
+  padding: 25px 15px 0;
+  border: 1px solid #e6e6e6;
+  border-top: 0;
+}
+
+.travel-info-tabindex .scroll h4 {
+  line-height: 36px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #ccc;
+  font-size: 18px;
+  color: #50b400;
+  font-weight: bold;
+}
+
+.travel-info-tabindex .scroll h5 {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  line-height: 28px;
+  background-color: #f5f5f5;
+  border-left: 3px solid #50b400;
+  font-weight: bold;
+}
+
+.travel-info-tabindex .scroll p {
+  text-indent: 28px;
+}
+
+.travel-info-tabindex .scroll .comm-count {
+  padding-left: 35px;
+  border-right: 1px solid #ddd;
+}
+
+.travel-info-tabindex .scroll .comm-count .percent {
+  float: left;
+  margin-right: 15px;
+  _display: inline;
+}
+
+.travel-info-tabindex .scroll .comm-count .percent h2 {
+  margin: 0;
+  color: #f63;
+}
+
+.travel-info-tabindex .scroll .comm-count .percent p {
+  margin: 0;
+}
+
+.travel-info-tabindex .scroll .comm-count .progresses {
+  overflow: hidden;
+}
+
+.travel-info-tabindex .scroll .comm-count .progresses ul {
+  margin-bottom: 0;
+}
+
+.travel-info-tabindex .scroll .comm-count .progresses .progress {
+  height: 11px;
+  width: 120px;
+  margin-bottom: 4px;
+  padding-left: 0;
+  vertical-align: middle;
+  border-radius: 0;
+}
+
+.travel-info-tabindex .scroll .comm-count .progresses .progress .progress-bar-danger {
+  background-color: #f63;
+}
+
+.travel-info-tabindex .scroll .comm-remark {
+  border-right: 1px solid #ddd;
+}
+
+.travel-info-tabindex .scroll .comm-remark .remarks-btn {
+  margin-top: 4px;
+}
+
+.travel-info-tabindex .scroll .comm-remark .remarks-btn .btn {
+  border-radius: 0;
+  padding: 3px 10px;
+}
+
+.travel-info-tabindex .scroll .comm-remark .remarks-btn .btn-default {
+  border-color: #f63;
+  color: #f63;
+}
+
+.travel-info-tabindex .scroll .comm-remark .remarks-btn .btn-default:hover {
+  background-color: #f63;
+  color: #fff;
+}
+
+.travel-info-tabindex .scroll .comm-cash p {
+  margin-bottom: 5px;
+  text-indent: 0;
+}
+
+.travel-info-tabindex .scroll .comm-cash .btn {
+  border-radius: 0;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+.travel-info-tabindex .scroll .comm-cash .btn-default {
+  border-color: #f63;
+  color: #f63;
+}
+
+.travel-info-tabindex .scroll .comm-cash .btn-default:hover {
+  background-color: #f63;
+  color: #fff;
+}
+
+.travel-info-tabindex .radio-tab {
+  margin: 15px;
+}
+
+.travel-info-tabindex .radio-tab .nav-tabs {
+  border-bottom: 0;
+  background-color: #fafafa;
+}
+
+.travel-info-tabindex .radio-tab .nav-tabs li a {
+  border: 0;
+  color: #333;
+}
+
+.travel-info-tabindex .radio-tab .nav-tabs li a:hover {
+  background-color: transparent;
+}
+
+.travel-info-tabindex .radio-tab .nav-tabs li.active a {
+  border: 0;
+  background-color: transparent;
+}
+
+.travel-info-tabindex .radio-tab .nav-tabs .glyphicon-record {
+  font-size: 15px;
+  color: #50b400;
+}
+
+.travel-info-tabindex .radio-tab .nav-tabs .glyphicon-circle {
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #666;
+  border-radius: 14px;
+}
+
+.travel-info-tabindex .radio-tab .tab-content {
+  padding: 15px;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .comm-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .comm-list p {
+  text-indent: 0;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .comm-list .user-info {
+  float: left;
+  width: 120px;
+  text-align: center;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .comm-list .user-remark {
+  display: table-cell;
+  margin-top: -20px;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .comm-list .user-remark #vlightbox span {
+  display: block;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .comm-list .user-remark #vlightbox a {
+  display: block;
+  float: left;
+  width: 140px;
+  height: 72px;
+  opacity: 0.87;
+  margin-right: 5px;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .comm-list .user-remark #vlightbox a img {
+  display: block;
+  margin: 0;
+  width: 140px;
+  height: 72px;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .comm-list .user-remark #vlightbox a:hover {
+  opacity: 1;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .comm-list .user-remark #vlightbox a.vlightbox_hidden {
+  display: none;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .pages .pagination {
+  float: left;
+  margin: 0;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .pages .pagination li a {
+  margin-right: 5px;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .pages .gopage {
+  float: left;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .pages .gopage label {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .pages .gopage .current_page {
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 40px;
+  text-align: center;
+}
+
+.travel-info-tabindex .radio-tab .tab-content .pages .gopage .btn-go {
+  padding: 5px 12px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.travel-info-main {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.travel-info-main .travel-info-content {
+  padding-bottom: 300px;
+}
+
+.travel-info {
+  background-color: #fafafa;
+  font-family: "微软雅黑";
+}
+
+.travel-info .travel-type {
+  width: 67px;
+  height: 67px;
+  margin-top: -5px;
+  margin-left: -5px;
+  display: block;
+  position: absolute;
+  background: url("../img/page-tit-icon.png") no-repeat scroll 0 0;
+  z-index: 99;
+}
+
+.travel-info .travel-content .travel-introduce {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.travel-info .likes h4 {
+  font-weight: bold;
+}
+
+.travel-info .likes .list-inline li {
+  width: 219px;
+  padding: 0;
+  margin-left: 6px;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+}
+
+.travel-info .likes .list-inline li img {
+  width: 100%;
+}
+
+.travel-info .likes .list-inline li p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-left: 8px;
+}
+
+.travel-info .likes .list-inline li .price {
+  padding: 3px 8px 6px;
+  color: #999;
+}
+
+.travel-info .likes .list-inline li .price .money em {
+  font-style: normal;
+  color: #f63;
+}
+
+.travel-info .likes .list-inline li .price .money i {
+  font-style: normal;
+  font-size: 18px;
+  color: #f63;
+}
+
+.travel-info .likes .list-inline li .price .gowhere {
+  float: right;
+  margin-top: 3px;
+}

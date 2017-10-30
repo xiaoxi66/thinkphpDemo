@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*
+ * colors variables
+ */
+body {
+  font-family: "微软雅黑";
+}
+
+.travel-signup {
+  padding: 10px 15px;
+}
+
+.travel-signup span.help-block {
+  color: red;
+}
+
+.travel-signup .logo img {
+  width: 150px;
+}
+
+.travel-signup .logo .welcome {
+  font-size: 17px;
+}
+
+.travel-signup .logo .gologin {
+  float: right;
+  display: block;
+  line-height: 60px;
+}
+
+.travel-signup .signup-box {
+  margin-top: 10px;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+.travel-signup .signup-box #precessor {
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  height: 80px;
+}
+
+.travel-signup .signup-box #precessor .processorBox {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.travel-signup .signup-box #precessor .processorBox li {
+  float: left;
+  width: 33.333%;
+  list-style: none;
+}
+
+.travel-signup .signup-box #precessor .processorBox li .step_inner {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.travel-signup .signup-box #precessor .processorBox li .step_inner .icon_step {
+  display: inline-block;
+  position: relative;
+  padding-top: 2px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  background-color: #c7c7c7;
+  z-index: 2;
+}
+
+.travel-signup .signup-box #precessor .processorBox li .step_inner h4 {
+  font-size: 16px;
+}
+
+.travel-signup .signup-box #precessor .processorBox li .current .icon_step {
+  background-color: #50b400;
+}
+
+.travel-signup .signup-box #precessor .step_line {
+  width: 68%;
+  height: 5px;
+  margin: 0 auto;
+  margin-top: -55px;
+  z-index: 1;
+  background-color: #f63;
+}
+
+.travel-signup .signup-box legend {
+  padding-left: 18px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fafafa;
+  color: #f63;
+}
+
+.travel-signup .signup-box .info {
+  width: 600px;
+  margin: 0 auto 30px;
+}
+
+.travel-signup .footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}

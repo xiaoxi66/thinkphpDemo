@@ -1,0 +1,51 @@
+/*
+ * colors variables
+ */
+.travel-person-homedata {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.travel-person-homedata h4 {
+  margin: 0;
+  line-height: 32px;
+  border-bottom: 2px solid #ddd;
+}
+
+.travel-person-homedata form {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.travel-person-homedata form .help-block {
+  color: red;
+}
+
+.travel-person-homedata form .data-head {
+  margin-bottom: 20px;
+}
+
+.travel-person-homedata form .data-head .media-head {
+  font-size: 16px;
+}
+
+.travel-person-homedata form .data-head .media-right {
+  vertical-align: middle;
+}
+
+.travel-person-homedata form .data-notice p {
+  font-size: 12px;
+  color: #666;
+}
+
+.travel-person-homedata form .btn-submit {
+  padding: 6px 30px;
+  color: #fff;
+  background-color: #f63;
+  text-align: center;
+}
+
+.travel-person-homedata form .btn-submit:hover {
+  background-color: #D45B26;
+}

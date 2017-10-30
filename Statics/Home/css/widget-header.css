@@ -1,0 +1,55 @@
+/*
+ * colors variables
+ */
+header {
+  /*
+     * nav-color, menu-color, mouseover-color
+     */
+}
+
+header a {
+  color: #666;
+}
+
+header a:hover {
+  color: #f63;
+  text-decoration: none;
+}
+
+header .headerWrapper {
+  min-height: 40px;
+  padding: 5px 0;
+}
+
+header .headerWrapper .tel {
+  font-size: 18px;
+  color: #f63;
+}
+
+header .headerWrapper .tel .glyphicon-earphone {
+  border: 2px solid #f63;
+  padding: 4px;
+  border-radius: 13px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+header .menuNavWrapper {
+  background-color: #4c5a65;
+}
+
+header .menuNavWrapper .navbar-nav li {
+  line-height: 36px;
+}
+
+header .menuNavWrapper .navbar-nav li.active {
+  background-color: #f63;
+}
+
+header .menuNavWrapper .navbar-nav li a {
+  color: #fff;
+}
+
+header .menuNavWrapper .navbar-nav li a:hover, header .menuNavWrapper .navbar-nav li a:focus {
+  background-color: #f63;
+}

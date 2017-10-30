@@ -1,0 +1,270 @@
+/*
+ * colors variables
+ */
+/*
+ * colors variables
+ */
+.topNavWrapper {
+  font-size: 12px;
+  line-height: 28px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ececec;
+}
+
+.topNavWrapper .navbar {
+  min-height: 28px;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+.travel-preorder dl {
+  margin-bottom: 0;
+}
+
+.travel-preorder a {
+  color: #333;
+  text-decoration: none;
+}
+
+.travel-preorder a:hover {
+  color: #f63;
+}
+
+.travel-preorder .top-block {
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.travel-preorder .top-block img {
+  width: 150px;
+}
+
+.travel-preorder .top-block .steps {
+  float: right;
+  height: 50px;
+  overflow: hidden;
+  padding-top: 10px;
+  width: 580px;
+}
+
+.travel-preorder .top-block .steps dl {
+  color: #666;
+  height: 27px;
+  line-height: 27px;
+  padding-top: 23px;
+  background: url("../img/page-steps.png") no-repeat right 0;
+}
+
+.travel-preorder .top-block .steps dl.step2 {
+  background-position: right -50px;
+}
+
+.travel-preorder .top-block .steps dl dd {
+  float: right;
+  text-align: right;
+}
+
+.travel-preorder .top-block .steps dl .s5 {
+  width: 112px;
+}
+
+.travel-preorder .top-block .steps dl .s4 {
+  width: 124px;
+}
+
+.travel-preorder .top-block .steps dl .s3 {
+  width: 124px;
+}
+
+.travel-preorder .top-block .steps dl .s2 {
+  width: 124px;
+}
+
+.travel-preorder .top-block .steps dl .s1 {
+  width: 80px;
+}
+
+.travel-preorder .preorder-box .order-text .order-title {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top-color: #50b400;
+  border-top-width: 2px;
+}
+
+.travel-preorder .preorder-box .order-text .order-title dt {
+  display: inline;
+}
+
+.travel-preorder .preorder-box .order-text .order-title dd {
+  display: inline;
+  font-size: 16px;
+}
+
+.travel-preorder .preorder-box .order-text .order-title dd span {
+  font-size: 13px;
+}
+
+.travel-preorder .preorder-box .order-text .type-info {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-top-color: #50b400;
+}
+
+.travel-preorder .preorder-box .order-text .type-info h4 {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fafafa;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.travel-preorder .preorder-box .order-text .type-info h4 span {
+  font-size: 12px;
+}
+
+.travel-preorder .preorder-box .order-text .type-info .form-list {
+  padding: 10px 20px;
+}
+
+.travel-preorder .preorder-box .order-text .type-info .form-list .godate {
+  float: left;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+.travel-preorder .preorder-box .order-text .type-info .form-list .inputdate {
+  width: 130px;
+}
+
+.travel-preorder .preorder-box .order-text .type-info .form-list .inputdate .form-control {
+  line-height: 28px;
+  font-size: 12px;
+}
+
+.travel-preorder .preorder-box .order-text .type-info .form-list .date-item {
+  margin: 10px 0;
+}
+
+.travel-preorder .preorder-box .order-text .type-info .form-list .often-customer {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #50b400;
+  line-height: 36px;
+  background-color: #fafafa;
+}
+
+.travel-preorder .preorder-box .order-text .type-info .form-list .form-group {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.travel-preorder .preorder-box .order-text .type-info .form-list .form-group .form-control {
+  padding: 6px 5px;
+  border-radius: 0;
+}
+
+.travel-preorder .preorder-box .order-text .base-info th, .travel-preorder .preorder-box .order-text .base-info td {
+  text-align: center;
+}
+
+.travel-preorder .preorder-box .order-text .base-info .people-num {
+  display: inline-block;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.travel-preorder .preorder-box .order-text .base-info .people-num .tool-btn {
+  width: 20px;
+  height: 26px;
+  color: #929292;
+  font-size: 12px;
+}
+
+.travel-preorder .preorder-box .order-text .base-info .people-num .tool-btn.minus {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.travel-preorder .preorder-box .order-text .base-info .people-num .tool-btn.plus {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+.travel-preorder .preorder-box .order-text .base-info .people-num .num {
+  width: 33px;
+  height: 33px;
+  box-sizing: border-box;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  display: inline-block;
+  border-top: 0;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.travel-preorder .preorder-box .order-text .order-need .scroll-xieyi {
+  padding: 10px;
+  margin-top: 10px;
+  height: 165px;
+  overflow: auto;
+  border: 1px solid #ddd;
+}
+
+.travel-preorder .preorder-box .order-text .text-center {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.travel-preorder .preorder-box .order-text .text-center a {
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.travel-preorder .preorder-box .costs {
+  padding: 0;
+}
+
+.travel-preorder .preorder-box .div2 {
+  width: 292.5px;
+  top: 5px;
+  z-index: 999;
+  position: fixed;
+  _position: absolute;
+}
+
+.travel-preorder .preorder-box .order-list {
+  border-top: 1px solid #f63;
+  background-color: #fff4d9;
+}
+
+.travel-preorder .preorder-box .order-list .panel-heading {
+  color: #f63;
+}
+
+.travel-preorder .preorder-box .order-list .panel-body .price {
+  float: right;
+  font-style: normal;
+}
+
+.travel-preorder .preorder-box .order-list .panel-footing {
+  padding: 10px 15px;
+  line-height: 40px;
+  background-color: #f63;
+  color: #fff;
+}
+
+.travel-preorder .preorder-box .order-list .panel-footing span {
+  font-size: 22px;
+}
+
+.footer {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+}

@@ -1,0 +1,17 @@
+/*
+ * colors variables
+ */
+.travel-note-citybanner {
+  position: relative;
+}
+
+.travel-note-citybanner .city {
+  position: absolute;
+  top: 10%;
+  color: #fff;
+}
+
+.travel-note-citybanner .city .city-name {
+  font-size: 36px;
+  font-weight: bold;
+}

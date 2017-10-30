@@ -1,0 +1,95 @@
+/*
+ * colors variables
+ */
+.travel-note-citylist {
+  margin-top: 20px;
+}
+
+.travel-note-citylist .note-item .processor {
+  width: 3px;
+  position: relative;
+  background-color: #ddd;
+  padding-right: 4px;
+}
+
+.travel-note-citylist .note-item .processor .circle {
+  position: absolute;
+  left: -9px;
+  top: -2px;
+}
+
+.travel-note-citylist .note-item .processor .circle .points {
+  color: #50b400;
+  font-size: 20px;
+}
+
+.travel-note-citylist .note-item .note-detail {
+  padding-left: 25px;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content img {
+  width: 170px;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content .note-text .media-head {
+  overflow: hidden;
+  max-width: 580px;
+  width: 580px;
+  line-height: 34px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 580px;
+  font-size: 18px;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content .note-text .note-desc {
+  position: relative;
+  line-height: 22px;
+  max-height: 44px;
+  overflow: hidden;
+  color: #666;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content .note-text .note-desc:after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  padding-left: 40px;
+  background: -webkit-linear-gradient(left, transparent, #fff 79%);
+  background: -o-linear-gradient(right, transparent, #fff 79%);
+  background: -moz-linear-gradient(right, transparent, #fff 79%);
+  background: linear-gradient(to right, transparent, #fff 79%);
+}
+
+.travel-note-citylist .note-item .note-detail .note-content .note-text .pull-left .photo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content .note-text .pull-left .author {
+  color: #f63;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content .note-text .pull-right {
+  color: #9a9a9a;
+  font-size: 12px;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content .note-text .pull-right span {
+  padding-left: 15px;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content .note-text .pull-right .glyphicon {
+  color: #9a9a9a;
+}
+
+.travel-note-citylist .note-item .note-detail .note-content .note-text .pull-right .fa {
+  color: #bbb;
+}

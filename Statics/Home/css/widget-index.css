@@ -1,0 +1,37 @@
+body, html {
+  padding: 0;
+  overflow: hidden;
+}
+
+.guide {
+  padding: 0;
+  background-color: lightslategrey;
+}
+
+.guide h4 {
+  margin: 0;
+  line-height: 36px;
+  font-weight: bold;
+  background-color: #4c5a65;
+  color: #fff;
+  text-align: center;
+}
+
+.guide dl {
+  margin-bottom: 0;
+}
+
+.guide dt {
+  padding: 0 15px;
+  line-height: 36px;
+  border-bottom: 1px solid #A0AAB1;
+  font-size: 16px;
+  background-color: lightslategrey;
+  color: #fff;
+}
+
+.guide dd {
+  padding-left: 30px;
+  line-height: 26px;
+  color: #D8D4D4;
+}

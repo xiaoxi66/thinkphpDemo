@@ -1,0 +1,103 @@
+/*
+ * colors variables
+ */
+.travel-note-release {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.travel-note-release h4 {
+  margin: 0;
+  line-height: 32px;
+  height: 32px;
+  border-bottom: 2px solid #ddd;
+}
+
+.travel-note-release .note-edit {
+  padding-top: 15px;
+}
+
+.travel-note-release .note-edit .form-control {
+  border-radius: 0;
+}
+
+.travel-note-release .note-edit .note-tit {
+  float: right;
+  margin-bottom: 10px;
+  margin-right: 13px;
+  width: 77%;
+}
+
+.travel-note-release .note-edit .note-chapter {
+  width: 20%;
+}
+
+.travel-note-release .note-edit .note-chapter .chapter {
+  padding-left: 8px;
+  margin-bottom: 10px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  background-color: #ececec;
+  cursor: pointer;
+}
+
+.travel-note-release .note-edit .note-chapter .chapter.active {
+  border-left: 2px solid #f63;
+}
+
+.travel-note-release .note-edit .note-chapter .chapter .close {
+  padding-right: 10px;
+  line-height: 28px;
+}
+
+.travel-note-release .note-edit .note-chapter .chapter .close .glyphicon-remove {
+  font-size: 12px;
+}
+
+.travel-note-release .note-edit .note-chapter .chapter-add {
+  height: 34px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-left: 8px;
+  line-height: 34px;
+  background-color: #50b400;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.travel-note-release .note-edit .note-chapter .chapter-add:hover {
+  background-color: #3E8803;
+}
+
+.travel-note-release .note-edit .note-content {
+  width: 80%;
+  padding: 10px;
+  background-color: #ececec;
+}
+
+.travel-note-release .note-edit .note-content .chapter-tit {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.travel-note-release .note-edit .note-content .editor {
+  width: 100%;
+}
+
+.travel-note-release .note-edit .note-content .submit {
+  line-height: 32px;
+}
+
+.travel-note-release .note-edit .note-content .submit .btn-submit {
+  padding: 6px 18px;
+  margin-top: 10px;
+  border-radius: 0;
+  background-color: #50b400;
+  font-size: 16px;
+  color: #fff;
+  vertical-align: bottom;
+}

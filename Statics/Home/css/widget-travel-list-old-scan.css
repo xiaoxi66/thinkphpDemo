@@ -1,0 +1,52 @@
+/*
+ * colors variables
+ */
+.old-scan {
+  float: right;
+  margin-top: 15px;
+  width: 230px;
+}
+
+.old-scan .panel-scan {
+  border-radius: 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.old-scan .panel-scan .panel-heading {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.old-scan .panel-scan .panel-heading .fa {
+  font-size: 20px;
+  color: #666;
+}
+
+.old-scan .panel-scan .panel-body {
+  padding: 8px 12px 0;
+  font-size: 12px;
+}
+
+.old-scan .panel-scan .panel-body ul li {
+  margin-bottom: 8px;
+  border-bottom: 1px dotted #ddd;
+}
+
+.old-scan .panel-scan .panel-body ul li:last-child {
+  border-bottom: 0;
+}
+
+.old-scan .panel-scan .panel-body ul li .media-body p {
+  margin: 0;
+}
+
+.old-scan .panel-scan .panel-body ul li .media-body p.price {
+  line-height: 25px;
+  color: #666;
+}
+
+.old-scan .panel-scan .panel-body ul li .media-body p.price span {
+  color: #f63;
+}

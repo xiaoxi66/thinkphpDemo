@@ -1,0 +1,144 @@
+/*
+ * colors variables
+ */
+.travel-tab-lists .nav-tabs li {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.travel-tab-lists .nav-tabs li a {
+  border: 0;
+  background-color: transparent;
+  color: #333;
+}
+
+.travel-tab-lists .nav-tabs li.active a {
+  position: relative;
+  border-bottom: 2px solid #f63;
+  color: #f63;
+}
+
+.travel-tab-lists .nav-tabs li.active a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  width: 2px;
+  height: 2px;
+  border-width: 5px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #f63 transparent;
+}
+
+.travel-tab-lists .nav-tabs li.active a:hover, .travel-tab-lists .nav-tabs li.active a:focus {
+  border: 0;
+  border-bottom: 2px solid #f63;
+}
+
+.travel-tab-lists .tab-content {
+  padding: 0 15px 15px;
+  margin-top: -2px;
+  border: 1px solid #ddd;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1eeee;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-head {
+  overflow: hidden;
+  width: 515px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 34px;
+  font-size: 18px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-head a {
+  text-decoration: none;
+  color: #333;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-head a:hover {
+  color: #f63;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-body {
+  position: relative;
+  max-height: 66px;
+  overflow: hidden;
+  line-height: 22px;
+  color: #666;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author {
+  margin-top: 15px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author .name {
+  color: #f63;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author .name a {
+  color: #f63;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author .looknum {
+  padding-left: 15px;
+  color: #666;
+  font-size: 12px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author span {
+  display: inline-block;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .media-author .author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .note-item .goodnum {
+  color: #f63;
+  cursor: pointer;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .pagination {
+  float: left;
+  margin: 0;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .pagination li a {
+  margin-right: 5px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .gopage {
+  float: left;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .gopage label {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .gopage .current_page {
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 40px;
+  text-align: center;
+}
+
+.travel-tab-lists .tab-content .travel-note-list .pages .gopage .btn-go {
+  padding: 5px 12px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

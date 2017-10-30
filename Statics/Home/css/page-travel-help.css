@@ -1,0 +1,220 @@
+/*
+ * colors variables
+ */
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.wrapper .wrapper-content {
+  padding-bottom: 300px;
+}
+
+/*
+ * colors variables
+ */
+.topNavWrapper {
+  font-size: 12px;
+  line-height: 28px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ececec;
+}
+
+.topNavWrapper .navbar {
+  min-height: 28px;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+/*
+ * colors variables
+ */
+header {
+  /*
+     * nav-color, menu-color, mouseover-color
+     */
+}
+
+header a {
+  color: #666;
+}
+
+header a:hover {
+  color: #f63;
+  text-decoration: none;
+}
+
+header .headerWrapper {
+  min-height: 40px;
+  padding: 5px 0;
+}
+
+header .headerWrapper .tel {
+  font-size: 18px;
+  color: #f63;
+}
+
+header .headerWrapper .tel .glyphicon-earphone {
+  border: 2px solid #f63;
+  padding: 4px;
+  border-radius: 13px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+header .menuNavWrapper {
+  background-color: #4c5a65;
+}
+
+header .menuNavWrapper .navbar-nav li {
+  line-height: 36px;
+}
+
+header .menuNavWrapper .navbar-nav li.active {
+  background-color: #f63;
+}
+
+header .menuNavWrapper .navbar-nav li a {
+  color: #fff;
+}
+
+header .menuNavWrapper .navbar-nav li a:hover, header .menuNavWrapper .navbar-nav li a:focus {
+  background-color: #f63;
+}
+
+/*
+ * colors variables
+ */
+footer {
+  height: 289px;
+  margin-top: -289px;
+  background-color: #ddd;
+}
+
+footer .foot-box {
+  padding-top: 25px;
+  height: 289px;
+}
+
+footer dl {
+  width: 12%;
+  float: left;
+  margin-right: 10px;
+}
+
+footer dl dt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer dl dd {
+  font-size: 14px;
+  color: #666;
+  line-height: 28px;
+}
+
+footer dl:last-child, footer dl:nth-last-child(2) {
+  float: right;
+}
+
+/*
+ * colors variables
+ */
+.travel-tab-vertical {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top: 2px solid #f63;
+  overflow: hidden;
+}
+
+.travel-tab-vertical .sidebar-nav {
+  padding: 0;
+  border-right: 1px solid #ddd;
+}
+
+.travel-tab-vertical .sidebar-nav h5 {
+  padding: 0 15px;
+  margin: 0;
+  line-height: 42px;
+  height: 42px;
+  background-color: #f63;
+  color: #fff;
+  font-size: 18px;
+}
+
+.travel-tab-vertical .sidebar-nav .nav-header {
+  display: block;
+  padding: 0 15px;
+  height: 42px;
+  border-bottom: 1px solid #dfdfdf;
+  line-height: 42px;
+  text-decoration: none;
+  background-color: #eaeaea;
+  color: #333;
+}
+
+.travel-tab-vertical .sidebar-nav .nav-header.on {
+  background-color: #FF8C76;
+  color: #fff;
+}
+
+.travel-tab-vertical .sidebar-nav .nav-header .glyphicon {
+  height: 42px;
+  line-height: 42px;
+}
+
+.travel-tab-vertical .sidebar-nav .nav-header.collapsed .glyphicon-chevron-toggle:before {
+  content: "\e113";
+}
+
+.travel-tab-vertical .sidebar-nav .nav-header .glyphicon-chevron-toggle:before {
+  content: "\e114";
+}
+
+.travel-tab-vertical .sidebar-nav .nav-tabs li {
+  padding: 0 15px;
+  margin-bottom: 0;
+  height: 42px;
+  float: none;
+  line-height: 42px;
+  background-color: #fafafa;
+  font-size: 12px;
+}
+
+.travel-tab-vertical .sidebar-nav .nav-tabs li a {
+  padding: 0;
+  height: 42px;
+  line-height: 42px;
+  color: #666;
+  cursor: pointer;
+}
+
+.travel-tab-vertical .sidebar-nav .nav-tabs li a:hover {
+  border: 0;
+  color: #D45B26;
+  background-color: transparent;
+}
+
+.travel-tab-vertical .sidebar-nav .nav-tabs li.active a {
+  border: 0;
+  background-color: transparent;
+}
+
+.travel-tab-vertical .tab-content h4 {
+  line-height: 32px;
+  border-bottom: 1px solid #ddd;
+}
+
+.travel-tab-vertical .tab-content .step-content {
+  font-size: 12px;
+}
+
+.travel-tab-vertical .tab-content .step-content .index-title {
+  color: #4c5a65;
+  font-weight: bold;
+}

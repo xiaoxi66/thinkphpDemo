@@ -1,0 +1,282 @@
+/*
+ * colors variables
+ */
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.wrapper .wrapper-content {
+  padding-bottom: 300px;
+}
+
+/*
+ * colors variables
+ */
+.topNavWrapper {
+  font-size: 12px;
+  line-height: 28px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ececec;
+}
+
+.topNavWrapper .navbar {
+  min-height: 28px;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+/*
+ * colors variables
+ */
+header {
+  /*
+     * nav-color, menu-color, mouseover-color
+     */
+}
+
+header a {
+  color: #666;
+}
+
+header a:hover {
+  color: #f63;
+  text-decoration: none;
+}
+
+header .headerWrapper {
+  min-height: 40px;
+  padding: 5px 0;
+}
+
+header .headerWrapper .tel {
+  font-size: 18px;
+  color: #f63;
+}
+
+header .headerWrapper .tel .glyphicon-earphone {
+  border: 2px solid #f63;
+  padding: 4px;
+  border-radius: 13px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+header .menuNavWrapper {
+  background-color: #4c5a65;
+}
+
+header .menuNavWrapper .navbar-nav li {
+  line-height: 36px;
+}
+
+header .menuNavWrapper .navbar-nav li.active {
+  background-color: #f63;
+}
+
+header .menuNavWrapper .navbar-nav li a {
+  color: #fff;
+}
+
+header .menuNavWrapper .navbar-nav li a:hover, header .menuNavWrapper .navbar-nav li a:focus {
+  background-color: #f63;
+}
+
+/*
+ * colors variables
+ */
+footer {
+  height: 289px;
+  margin-top: -289px;
+  background-color: #ddd;
+}
+
+footer .foot-box {
+  padding-top: 25px;
+  height: 289px;
+}
+
+footer dl {
+  width: 12%;
+  float: left;
+  margin-right: 10px;
+}
+
+footer dl dt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer dl dd {
+  font-size: 14px;
+  color: #666;
+  line-height: 28px;
+}
+
+footer dl:last-child, footer dl:nth-last-child(2) {
+  float: right;
+}
+
+/*
+ * colors variables
+ */
+.travel-note-infohead {
+  position: relative;
+}
+
+.travel-note-infohead .note-intro {
+  position: absolute;
+  top: 10%;
+}
+
+.travel-note-infohead .note-intro .note-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.travel-note-infohead .note-intro .note-title .release-time {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.travel-note-infohead .note-intro .author-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.travel-note-infohead .note-intro .author-info .media-body span {
+  display: block;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/*
+ * colors variables
+ */
+.travel-note-other h4 {
+  line-height: 36px;
+  border-bottom: 2px dotted #ddd;
+  font-size: 16px;
+  color: #f63;
+}
+
+.travel-note-other .other-note-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #F3F2F2;
+}
+
+.travel-note-other .other-note-item img {
+  width: 90px;
+}
+
+.travel-note-other .other-note-item .media-right .note-title {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.travel-note-other .other-note-item .media-right .note-date {
+  color: #666;
+}
+
+/*
+ * colors variables
+ */
+.travel-note-commment {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.travel-note-commment .inputWrap {
+  width: 100%;
+  position: relative;
+}
+
+.travel-note-commment .inputWrap textarea {
+  width: 100%;
+  height: 120px;
+}
+
+.travel-note-commment .inputWrap .btn-submit {
+  padding: 6px 20px;
+  margin-top: 10px;
+  letter-spacing: 6px;
+  text-align: center;
+  background-color: #f63;
+  color: #fff;
+}
+
+.travel-note-commment .inputWrap .btn-submit:hover {
+  background-color: #D45B26;
+}
+
+.travel-notes-info {
+  padding-top: 15px;
+}
+
+.travel-notes-info .notes-content .note-head {
+  padding: 8px 3px 8px 10px;
+  line-height: 36px;
+  border: 1px solid #ddd;
+}
+
+.travel-notes-info .notes-content .note-head p {
+  margin-bottom: 0;
+}
+
+.travel-notes-info .notes-content .note-head span {
+  color: #666;
+}
+
+.travel-notes-info .notes-content h4 {
+  line-height: 36px;
+  border-bottom: 2px dotted #ddd;
+  color: #f63;
+}
+
+.travel-notes-info .sidebar .operate {
+  overflow: hidden;
+  border-left: 1px solid #ddd;
+  border-right: 0;
+}
+
+.travel-notes-info .sidebar .operate ul {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.travel-notes-info .sidebar .operate ul li {
+  padding: 5px 0;
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.travel-notes-info .sidebar .operate ul li .glyphicon {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.travel-notes-info .sidebar .operate ul li .glyphicon.collect {
+  color: #f63;
+}
+
+.travel-notes-info .sidebar .operate ul li .glyphicon.good {
+  color: #61aefd;
+}
+
+.travel-notes-info .sidebar .operate ul li .glyphicon.commit {
+  color: #50b400;
+}

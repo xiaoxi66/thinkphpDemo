@@ -1,0 +1,2394 @@
+[ 2017-10-06T11:30:12+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-10-06T11:30:46+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `tp_manager` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_manager` WHERE `username` = 'admin' AND `password` = 'bf93ef264d77304d3044e33943d293cfddc9e7ef' AND `status` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `tp_manager` SET `ip`='123.119.228.44',`last_login`='1507260646' WHERE `id` = 1 [ RunTime:0.0001s ]
+
+[ 2017-10-06T11:30:49+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0 AND `is_nav` = '1'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` <> '0' AND `is_nav` = '1'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-10-06T11:30:50+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2017-10-06T11:31:02+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+ERR: 模板不存在:./Application/Admin/View/System/siteInfo.html
+
+[ 2017-10-06T11:33:05+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Role&a=roleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `tp_role` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_role`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-10-06T11:33:07+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Role&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` > '0'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-10-06T11:33:31+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+ERR: 模板不存在:./Application/Admin/View/System/siteInfo.html
+
+[ 2017-10-06T11:33:42+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+ERR: 模板不存在:./Application/Admin/View/System/siteInfo.html
+
+[ 2017-10-06T11:34:21+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+ERR: 模板不存在:./Application/Admin/View/System/siteInfo.html
+
+[ 2017-10-06T11:34:47+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2017-10-06T11:39:33+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-10-06T11:41:21+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-10-06T11:41:42+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2017-10-06T11:42:07+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-10-06T11:42:36+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2017-10-06T11:42:53+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2017-10-06T11:46:38+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-10-06T11:48:53+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-10-06T11:57:00+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-10-06T11:57:09+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-10-06T11:58:00+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0005s ]
+SQL: UPDATE `tp_site` SET `front_name`='爱游网',`back_name`='传智播客旅游网站管理系统 v2.0',`icp_no`='京ICP备15058198号-2',`mps_no`='11010502034160',`status`='1' WHERE `id` = 1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-10-06T11:58:36+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0005s ]
+SQL: UPDATE `tp_site` SET `front_name`='爱游网',`back_name`='传智播客旅游网站管理系统 v2.0',`icp_no`='京ICP备15058198号-2',`mps_no`='11010502034160',`status`='0' WHERE `id` = 1 [ RunTime:0.0009s ]
+
+[ 2017-10-06T11:59:36+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_site` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-10-06T12:00:19+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_site` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-10-06T12:00:45+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_site` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-10-06T12:01:06+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_site` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-10-06T12:01:08+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0006s ]
+SQL: UPDATE `tp_site` SET `front_name`='爱游网',`back_name`='传智播客旅游网站管理系统 v2.0',`icp_no`='京ICP备15058198号-2',`mps_no`='11010502034160',`status`='1' WHERE `id` = 1 [ RunTime:0.0012s ]
+
+[ 2017-10-06T12:01:12+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_site` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-10-06T12:01:25+08:00 ] 127.0.0.1 /index.php?m=Admin&c=System&a=siteInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_site` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-10-06T13:57:09+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-10-06T14:15:09+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2017-10-06T14:16:34+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `tp_auth` WHERE `auth_name` = '产品管理' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `tp_auth` (`pid`,`auth_name`,`is_nav`,`icon`,`created_at`) VALUES ('0','产品管理','1','&amp;#xe6c0;','1507270594') [ RunTime:0.0011s ]
+
+[ 2017-10-06T14:16:34+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-10-06T14:16:37+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0 AND `is_nav` = '1'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` <> '0' AND `is_nav` = '1'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-10-06T14:16:37+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-10-06T14:16:48+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Role&a=roleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `tp_role` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_role`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-10-06T14:16:49+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-10-06T14:17:11+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-10-06T14:18:38+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-10-06T14:18:45+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-10-06T14:18:55+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-10-06T14:19:13+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-10-06T14:19:22+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `tp_auth` WHERE `auth_name` = '产品列表' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `tp_auth` (`pid`,`auth_name`,`controller`,`action`,`is_nav`,`icon`,`created_at`) VALUES ('26','产品列表','Product','productList','1','','1507270762') [ RunTime:0.0010s ]
+
+[ 2017-10-06T14:19:22+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-10-06T14:19:27+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0 AND `is_nav` = '1'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` <> '0' AND `is_nav` = '1'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-10-06T14:19:27+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2017-10-06T14:19:42+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-10-06T14:19:51+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-10-06T14:19:56+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-10-06T14:19:59+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `tp_auth` WHERE `auth_name` = '分类列表' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `tp_auth` (`pid`,`auth_name`,`controller`,`action`,`is_nav`,`icon`,`created_at`) VALUES ('26','分类列表','Type','typeList','1','','1507270799') [ RunTime:0.0010s ]
+
+[ 2017-10-06T14:19:59+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-10-06T14:20:08+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0 AND `is_nav` = '1'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` <> '0' AND `is_nav` = '1'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-10-06T14:20:08+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-10-06T14:20:17+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=productList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+ERR: 模板不存在:./Application/Admin/View/Product/productList.html
+
+[ 2017-10-06T14:27:21+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=productList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-10-06T14:28:17+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Admin/View/Type/typeList.html
+
+[ 2017-10-06T14:29:09+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Admin/View/Type/typeList.html
+
+[ 2017-10-06T14:29:54+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-10-06T14:29:54+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-10-06T14:30:13+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `tp_manager` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_manager` WHERE `username` = 'admin' AND `password` = 'bf93ef264d77304d3044e33943d293cfddc9e7ef' AND `status` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `tp_manager` SET `ip`='123.119.228.44',`last_login`='1507271413' WHERE `id` = 1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0003s ]
+SQL: SELECT `back_name` FROM `tp_site` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-10-06T14:30:16+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0 AND `is_nav` = '1'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` <> '0' AND `is_nav` = '1'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-10-06T14:30:16+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-10-06T14:30:25+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Admin/View/Type/type-list.html
+
+[ 2017-10-06T14:30:47+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 58 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-10-06T14:30:51+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 58 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-10-06T14:31:12+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 58 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-10-06T14:31:13+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 58 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-10-06T14:32:40+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-10-06T14:32:40+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-10-06T14:33:11+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2017-10-06T14:33:39+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 58 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-10-06T14:34:13+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 58 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: auth /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: desc /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 62 行.
+NOTIC: [8] Undefined index: created_at /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 63 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 65 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 70 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-10-06T14:34:52+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-10-06T14:35:13+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+NOTIC: [8] Undefined index: status /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 56 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-10-06T14:35:52+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 57 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 57 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-10-06T14:36:04+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 57 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 57 行.
+NOTIC: [8] Undefined index: role_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/84f14cedc7f358c45e46446738e08237.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-10-06T14:37:22+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-10-06T14:39:00+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-10-06T14:39:18+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-10-06T14:40:05+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-10-06T14:40:16+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=productList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+ERR: 模板不存在:./Application/Admin/View/Product/productList.html
+
+[ 2017-10-06T14:44:12+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-10-06T14:44:17+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=edit&id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2017-10-06T14:46:03+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=edit&id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `tp_auth` SET `auth_name`='电子商务',`pid`='0',`is_nav`='1',`status`='1',`icon`='&amp;#xe672;' WHERE `id` = 22 [ RunTime:0.0014s ]
+
+[ 2017-10-06T14:46:05+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-10-06T14:47:33+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-10-06T14:47:44+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+NOTIC: [2] Invalid argument supplied for foreach() /webdocs/28sjw.com/demo/Application/Admin/Controller/AuthController.class.php 第 232 行.
+NOTIC: [8] Undefined variable: customer_functions /webdocs/28sjw.com/demo/Application/Admin/Controller/AuthController.class.php 第 240 行.
+
+[ 2017-10-06T14:48:00+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-10-06T14:48:07+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+NOTIC: [2] Invalid argument supplied for foreach() /webdocs/28sjw.com/demo/Application/Admin/Controller/AuthController.class.php 第 232 行.
+NOTIC: [8] Undefined variable: customer_functions /webdocs/28sjw.com/demo/Application/Admin/Controller/AuthController.class.php 第 240 行.
+
+[ 2017-10-06T14:48:31+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Undefined variable: customer_functions /webdocs/28sjw.com/demo/Application/Admin/Controller/AuthController.class.php 第 240 行.
+
+[ 2017-10-06T14:48:34+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-10-06T14:48:55+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `tp_auth` WHERE `auth_name` = '支付方式' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `tp_auth` (`pid`,`auth_name`,`controller`,`action`,`is_nav`,`icon`,`created_at`) VALUES ('22','支付方式','Pay','payList','1','','1507272535') [ RunTime:0.0010s ]
+
+[ 2017-10-06T14:48:55+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-10-06T14:48:57+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0 AND `is_nav` = '1'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` <> '0' AND `is_nav` = '1'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-10-06T14:48:58+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-10-06T14:49:01+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+ERR: 1146:Table 'travel.tp_pay' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_pay`
+ERR: 1146:Table 'travel.tp_pay' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_pay`
+
+[ 2017-10-06T14:57:32+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-10-06T14:58:15+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-10-06T14:59:14+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-10-06T15:07:25+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-10-06T15:07:37+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 53 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 57 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 53 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 57 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 53 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 57 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 53 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 57 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 53 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 57 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 53 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-10-06T15:08:36+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-10-06T15:09:03+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-10-06T15:09:20+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-10-06T15:09:35+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2017-10-06T15:09:49+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-10-06T15:09:59+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-10-06T15:11:40+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-10-06T15:11:55+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-10-06T15:12:07+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2017-10-06T15:12:27+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-10-06T15:13:04+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-10-06T15:13:33+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+NOTIC: [8] Undefined index: type_name /webdocs/28sjw.com/demo/Application/Runtime/Cache/Admin/4f47f0b5778a4ea08739e257f52a9a71.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-10-06T15:15:03+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-10-06T15:20:49+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-10-06T15:24:13+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-10-06T15:24:37+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-10-06T15:24:55+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-10-06T15:24:57+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Pay&a=payList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `tp_pay` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pay`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-10-06T15:26:14+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=productList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+ERR: 模板不存在:./Application/Admin/View/Product/productList.html
+
+[ 2017-10-06T15:26:15+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+

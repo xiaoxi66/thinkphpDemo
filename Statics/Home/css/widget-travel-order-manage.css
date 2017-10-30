@@ -1,0 +1,108 @@
+/*
+ * colors variables
+ */
+.travel-order-manage {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.travel-order-manage h4 {
+  margin: 0;
+  line-height: 32px;
+  height: 32px;
+  border-bottom: 2px solid #ddd;
+}
+
+.travel-order-manage .order-content .nav-tabs li a {
+  font-size: 16px;
+  color: #333;
+}
+
+.travel-order-manage .order-content .nav-tabs li a:hover {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.travel-order-manage .order-content .nav-tabs li.active {
+  border-bottom: 2px solid #f63;
+}
+
+.travel-order-manage .order-content .nav-tabs li.active a {
+  border: 1px solid transparent;
+  color: #f63;
+}
+
+.travel-order-manage .order-content .operate {
+  overflow: hidden;
+  margin: 0 10px;
+  border-bottom: 1px solid #ddd;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.travel-order-manage .order-content .operate ul {
+  margin-bottom: 0;
+}
+
+.travel-order-manage .order-content .tab-content {
+  margin: 0 10px;
+}
+
+.travel-order-manage .order-content .tab-content .products .product-item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.travel-order-manage .order-content .tab-content .products .product-item .media-head {
+  font-weight: bold;
+}
+
+.travel-order-manage .order-content .tab-content .products .product-item .btn-preorder {
+  padding: 0 8px;
+  color: #f63;
+  font-size: 13px;
+}
+
+.travel-order-manage .order-content .tab-content .products .product-item .btn-del {
+  font-size: 13px;
+  color: #333;
+}
+
+.travel-order-manage .order-content .tab-content .products .pages .pagination {
+  float: left;
+  margin: 0;
+}
+
+.travel-order-manage .order-content .tab-content .products .pages .pagination li a {
+  margin-right: 5px;
+}
+
+.travel-order-manage .order-content .tab-content .products .pages .gopage {
+  float: left;
+}
+
+.travel-order-manage .order-content .tab-content .products .pages .gopage label {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.travel-order-manage .order-content .tab-content .products .pages .gopage .current_page {
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 40px;
+  text-align: center;
+}
+
+.travel-order-manage .order-content .tab-content .products .pages .gopage .btn-go {
+  padding: 5px 12px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

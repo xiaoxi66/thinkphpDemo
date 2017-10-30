@@ -1,0 +1,152 @@
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="Bookmark" href="/favicon.ico" >
+<link rel="Shortcut Icon" href="/favicon.ico" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/Statics/Lib/html5shiv.js"></script>
+<script type="text/javascript" src="/Statics/Lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/Statics/Lib/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/Statics/Lib/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/Statics/Lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/Statics/Lib/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/Statics/Lib/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="/Statics/Lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<!--/meta 作为公共模版分离出去-->
+
+<title>站点信息 - 管理员管理 - <?php echo (session('back_name')); ?></title>
+</head>
+<body>
+<article class="page-container">
+	<form action="" method="post" class="form form-horizontal" id="form-admin-role-add">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>前台名称：</label>
+			<div class="formControls col-xs-5 col-sm-6">
+				<input type="text" class="input-text" value="<?php echo ($data["front_name"]); ?>" placeholder="请填写前台名称..." id="front_name" name="front_name">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>后台名称：</label>
+			<div class="formControls col-xs-5 col-sm-6">
+				<input type="text" class="input-text" value="<?php echo ($data["back_name"]); ?>" placeholder="请填写后台名称..." id="back_name" name="back_name">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">ICP备案号：</label>
+			<div class="formControls col-xs-5 col-sm-6">
+				<input type="text" class="input-text" value="<?php echo ($data["icp_no"]); ?>" placeholder="请填写ICP备案号" id="icp_no" name="icp_no">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">公网安备号：</label>
+			<div class="formControls col-xs-5 col-sm-6">
+				<input type="text" class="input-text" value="<?php echo ($data["mps_no"]); ?>" placeholder="请填写公网安备案号" id="mps_no" name="mps_no">
+			</div>
+		</div>
+		<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>站点状态：</label>
+		<div class="formControls col-xs-5 col-sm-6 skin-minimal">
+			<div class="radio-box">
+				<input name="status" type="radio" value="1" id="status-1" <?php if($data["status"] == '1'): ?>checked<?php endif; ?>>
+				<label for="status-1">正常</label>
+			</div>
+			<div class="radio-box">
+				<input type="radio" id="status-2" value="0" name="status" <?php if($data["status"] == '0'): ?>checked<?php endif; ?>>
+				<label for="status-2">维护</label>
+			</div>
+		</div>
+	</div>
+		<div class="row cl">
+			<div class="col-xs-5 col-sm-6 col-xs-offset-4 col-sm-offset-3">
+				<button type="submit" class="btn btn-success radius" id="admin-role-save" name="admin-role-save"><i class="icon-ok"></i> 确定</button>
+			</div>
+		</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Statics/Lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/Statics/Lib/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="/Statics/Lib/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="/Statics/Lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="/Statics/Lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/Statics/Lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".permission-list dt input:checkbox").click(function(){
+		$(this).closest("dl").find("dd input:checkbox").prop("checked",$(this).prop("checked"));
+	});
+	$(".permission-list2 dd input:checkbox").click(function(){
+		var l =$(this).parent().parent().find("input:checked").length;
+		var l2=$(this).parents(".permission-list").find(".permission-list2 dd").find("input:checked").length;
+		if($(this).prop("checked")){
+			$(this).closest("dl").find("dt input:checkbox").prop("checked",true);
+			$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",true);
+		}
+		else{
+			if(l==0){
+				$(this).closest("dl").find("dt input:checkbox").prop("checked",false);
+			}
+			if(l2==0){
+				$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",false);
+			}
+		}
+	});
+	
+	$("#form-admin-role-add").validate({
+		rules:{
+			front_name:{
+				required:true,
+			},
+			back_name:{
+				required:true,
+			},
+			status:{
+				required:true,
+			},
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+			$(form).ajaxSubmit({
+                type: 'post',
+                url: "",
+                success: function(data) {
+                	if(data.code == '0'){
+                        parent.layer.msg(data.message, {
+                            icon: 1,
+                            time: 1500
+                        });
+					}else{
+						//错误代码1
+						parent.layer.msg(data.message,{icon:2,time:2000});
+					}
+                },
+                error: function(XmlHttpRequest, textStatus, errorThrown) {
+                    parent.layer.msg('error!', {
+                        icon: 1,
+                        time: 1000
+                    });
+                }
+            });
+		}
+	});
+});
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

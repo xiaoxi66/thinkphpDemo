@@ -1,0 +1,210 @@
+/*
+ * colors variables
+ */
+.typeselect-bar {
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.typeselect-bar .fa-sort-down {
+  line-height: 24px;
+  vertical-align: top;
+}
+
+.typeselect-bar .fa-sort-up {
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.typeselect-bar .nav-tabs {
+  border-bottom-width: 2px;
+  border-bottom-color: #f63;
+  background-color: #fafafa;
+}
+
+.typeselect-bar .nav-tabs > li {
+  margin-bottom: 0;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.typeselect-bar .nav-tabs > li:first-child {
+  border-left: 1px solid #ddd;
+}
+
+.typeselect-bar .nav-tabs > li.active {
+  border-color: #f63;
+}
+
+.typeselect-bar .nav-tabs > li a {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-right: 0;
+  border-radius: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.typeselect-bar .nav-tabs > li a sup {
+  color: #f63;
+}
+
+.typeselect-bar .nav-tabs > li a:hover, .typeselect-bar .nav-tabs > li a:focus {
+  color: #f63;
+  border: 1px solid transparent;
+}
+
+.typeselect-bar .nav-tabs > li a:hover sup, .typeselect-bar .nav-tabs > li a:focus sup {
+  color: #f63;
+}
+
+.typeselect-bar .nav-tabs > li.active > a {
+  color: #fff;
+  background-color: #f63;
+  border-color: #f63;
+}
+
+.typeselect-bar .nav-tabs > li.active > a sup {
+  color: #fff;
+}
+
+.typeselect-bar .nav-tabs > li.active > a:hover, .typeselect-bar .nav-tabs > li.active > a:focus {
+  color: #fff;
+  background-color: #f63;
+}
+
+.typeselect-bar .nav-tabs > li.active > a:hover sup, .typeselect-bar .nav-tabs > li.active > a:focus sup {
+  color: #fff;
+}
+
+.typeselect-bar .tab-content {
+  padding: 10px 15px 8px;
+  border: 1px solid #ddd;
+  border-top: 0;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.typeselect-bar .tab-content a {
+  color: #333;
+  text-decoration: none;
+}
+
+.typeselect-bar .tab-content a:hover {
+  color: #f63;
+}
+
+.typeselect-bar .tab-content .selected h5 {
+  display: inline-block;
+}
+
+.typeselect-bar .tab-content .selected .selected-item {
+  display: inline-block;
+  line-height: 12px;
+  margin-right: 6px;
+  padding: 3px 0 5px;
+  border: 1px solid #f63;
+}
+
+.typeselect-bar .tab-content .selected .selected-item .choosetitle {
+  line-height: 12px;
+  padding: 4px 2px;
+  background-color: #f63;
+  color: #fff;
+}
+
+.typeselect-bar .tab-content .selected .selected-item .choosedetail {
+  padding: 4px 2px;
+}
+
+.typeselect-bar .tab-content .selected .selected-item .glyphicon-remove {
+  color: #f63;
+  cursor: pointer;
+}
+
+.typeselect-bar .tab-content .selected .clearchoose {
+  width: 75px;
+  float: right;
+}
+
+.typeselect-bar .tab-content .lines {
+  padding: 4px 0;
+  border-bottom: 1px dotted #e6e6e6;
+}
+
+.typeselect-bar .tab-content .lines a {
+  color: #333;
+}
+
+.typeselect-bar .tab-content .lines a:hover {
+  color: #f63;
+}
+
+.typeselect-bar .tab-content .lines .none {
+  display: none;
+}
+
+.typeselect-bar .tab-content .lines .none dt {
+  width: 60px;
+}
+
+.typeselect-bar .tab-content .lines .tool {
+  display: none;
+  text-align: center;
+}
+
+.typeselect-bar .tab-content .lines .tool .sure {
+  padding: 3px;
+  border-radius: 4px;
+  background-color: #f63;
+  color: #fff;
+}
+
+.typeselect-bar .tab-content .lines dl {
+  margin-bottom: 0;
+  width: 810px;
+  display: inline-block;
+}
+
+.typeselect-bar .tab-content .lines dl dt {
+  display: inline-block;
+  color: #666;
+  font-weight: normal;
+}
+
+.typeselect-bar .tab-content .lines dl dd {
+  display: inline-block;
+}
+
+.typeselect-bar .tab-content .lines dl dd ul {
+  margin-bottom: 0;
+}
+
+.typeselect-bar .tab-content .lines dl dd ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.typeselect-bar .tab-content .lines dl dd ul li .check {
+  display: none;
+}
+
+.typeselect-bar .tab-content .lines dl dd ul li .cdate {
+  width: 75px;
+}
+
+.typeselect-bar .tab-content .lines .outdate {
+  display: inline-block;
+}
+
+.typeselect-bar .tab-content .lines .outdate .datesure {
+  padding: 4px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #f63;
+}
+
+.typeselect-bar .tab-content .lines .morechoose {
+  float: right;
+}

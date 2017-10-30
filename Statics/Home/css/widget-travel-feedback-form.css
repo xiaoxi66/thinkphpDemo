@@ -1,0 +1,116 @@
+/*
+ * colors variables
+ */
+.feedback-form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-top-width: 2px;
+  border-top-color: #f63;
+}
+
+.feedback-form p {
+  margin: 0;
+}
+
+.feedback-form .formBox {
+  padding: 15px 0 15px;
+}
+
+.feedback-form h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #f63;
+}
+
+.feedback-form .tips {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px dashed #ffce88;
+  color: #666;
+  background-color: #ffffe0;
+  font-size: 12px;
+}
+
+.feedback-form .form-box dl {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.feedback-form .form-box dl dt {
+  float: left;
+  height: 28px;
+  width: 78px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.feedback-form .form-box dl dt span {
+  padding-right: 3px;
+  color: red;
+}
+
+.feedback-form .form-box dl dd {
+  float: left;
+  margin-right: 15px;
+  height: 28px;
+  line-height: 28px;
+  color: #666;
+}
+
+.feedback-form .form-box dl dd .radiobox {
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.feedback-form .form-box dl dd label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.feedback-form .form-box dl dd.content {
+  height: auto;
+  padding: 0;
+  margin-right: 0;
+}
+
+.feedback-form .form-box dl dd.content .inputWrap {
+  position: relative;
+  float: left;
+  border: 1px solid #ddd;
+  border-top-color: #666;
+}
+
+.feedback-form .form-box dl dd.content .inputWrap .inputarea {
+  height: 128px;
+  width: 650px;
+  float: left;
+  border: 0;
+  line-height: 20px;
+  background-color: transparent;
+  resize: none;
+}
+
+.feedback-form .form-box dl dd.content .inputWrap .inputphone {
+  width: 500px;
+  height: 26px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 0;
+  line-height: 26px;
+}
+
+.feedback-form .form-box dl dd.content .inputWrap .inputcode {
+  width: 80px;
+  height: 26px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 0;
+  line-height: 26px;
+}
+
+.feedback-form .form-box dl dd .btn-submit {
+  border-radius: 0;
+  padding: 4px 25px;
+}

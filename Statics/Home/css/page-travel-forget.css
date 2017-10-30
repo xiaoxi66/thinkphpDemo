@@ -1,0 +1,87 @@
+/*
+ * colors variables
+ */
+.travel-forget .logo img {
+  width: 150px;
+}
+
+.travel-forget .logo .welcome {
+  font-size: 18px;
+}
+
+.travel-forget .signup-box {
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.travel-forget .signup-box #precessor {
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  height: 80px;
+}
+
+.travel-forget .signup-box #precessor .processorBox {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.travel-forget .signup-box #precessor .processorBox li {
+  float: left;
+  width: 33.333%;
+  list-style: none;
+}
+
+.travel-forget .signup-box #precessor .processorBox li .step_inner {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.travel-forget .signup-box #precessor .processorBox li .step_inner .icon_step {
+  display: inline-block;
+  position: relative;
+  padding-top: 2px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  background-color: #c7c7c7;
+  z-index: 2;
+}
+
+.travel-forget .signup-box #precessor .processorBox li .step_inner h4 {
+  font-size: 16px;
+}
+
+.travel-forget .signup-box #precessor .processorBox li .current .icon_step {
+  background-color: #50b400;
+}
+
+.travel-forget .signup-box #precessor .step_line {
+  width: 68%;
+  height: 5px;
+  margin: 0 auto;
+  margin-top: -55px;
+  z-index: 1;
+  background-color: #f63;
+}
+
+.travel-forget .signup-box .btn-danger {
+  background-color: #f63;
+  letter-spacing: 5px;
+}
+
+.travel-forget .signup-box .btn-danger:hover {
+  background-color: #D45B26;
+}
+
+.travel-forget .signup-box .phonenum {
+  padding-top: 6px;
+}

@@ -1,0 +1,45 @@
+/*
+ * colors variables
+ */
+.travel-author-home {
+  position: relative;
+}
+
+.travel-author-home .author-intro {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.travel-author-home .author-intro .author-info {
+  width: 150px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.travel-author-home .author-intro .author-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.travel-author-home .author-intro .author-info .pull-right span {
+  display: block;
+}
+
+.travel-author-home .author-intro .author-info .pull-right em {
+  font-style: normal;
+}
+
+.travel-author-home .author-intro .author-info .pull-right .name {
+  padding-bottom: 15px;
+  line-height: 32px;
+  height: 32px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.travel-author-home .author-intro .author-info .pull-right .notenum {
+  font-size: 12px;
+  color: #7E7676;
+}

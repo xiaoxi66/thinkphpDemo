@@ -1,0 +1,1223 @@
+[ 2017-10-10T12:41:05+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-10-10T12:41:21+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `tp_manager` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_manager` WHERE `username` = 'admin' AND `password` = 'bf93ef264d77304d3044e33943d293cfddc9e7ef' AND `status` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `tp_manager` SET `ip`='123.119.228.96',`last_login`='1507610481' WHERE `id` = 1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.0003s ]
+SQL: SELECT `back_name` FROM `tp_site` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-10-10T12:41:24+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0 AND `is_nav` = '1'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` <> '0' AND `is_nav` = '1'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2017-10-10T12:41:24+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2017-10-10T12:41:42+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-10-10T12:42:06+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-10-10T12:42:41+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined variable: customer_functions /webdocs/28sjw.com/demo/Application/Admin/Controller/AuthController.class.php 第 240 行.
+
+[ 2017-10-10T12:42:43+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=getActionNames
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-10-10T12:42:50+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `tp_auth` WHERE `auth_name` = '添加产品' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto /webdocs/28sjw.com/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `tp_auth` (`pid`,`auth_name`,`controller`,`action`,`is_nav`,`icon`,`created_at`) VALUES ('26','添加产品','Product','addProduct','1','','1507610570') [ RunTime:0.0019s ]
+
+[ 2017-10-10T12:42:50+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Auth&a=authList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0  [ RunTime:0.0002s ]
+SQL: SELECT t1.*,t2.auth_name as parent_name FROM tp_auth t1 left join tp_auth as t2 on t1.pid = t2.id   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-10-10T12:42:53+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` = 0 AND `is_nav` = '1'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_auth` WHERE `pid` <> '0' AND `is_nav` = '1'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-10-10T12:42:53+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-10-10T12:42:59+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-10-10T12:43:28+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+ERR: 模板不存在:./Application/Admin/View/Product/addProduct.html
+
+[ 2017-10-10T12:44:40+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Member&a=userList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+ERR: 非法操作:userList
+
+[ 2017-10-10T12:44:44+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Manager&a=userList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `tp_manager` [ RunTime:0.0005s ]
+SQL: SELECT t1.*,t2.role_name FROM tp_manager t1 left join tp_role as t2 on t1.role_id = t2.id  WHERE t1.status <> '3'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2017-10-10T12:45:09+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Manager&a=edit&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `tp_manager` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_manager` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-10-10T12:47:05+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+ERR: 模板不存在:./Application/Admin/View/Product/product-add.html.html
+
+[ 2017-10-10T12:47:15+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-10-10T13:26:44+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-10-10T13:26:47+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-10-10T13:27:16+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-10-10T13:27:23+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-10-10T13:27:50+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-10-10T13:33:28+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2017-10-10T13:34:18+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-10-10T13:37:36+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-10-10T13:38:16+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-10-10T13:39:15+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-10-10T13:43:18+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-10-10T13:44:24+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2017-10-10T13:44:41+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-10-10T13:46:10+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-10-10T13:47:34+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-10-10T13:49:52+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-10-10T13:51:38+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-10-10T13:54:49+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-10-10T13:57:13+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-10-10T14:00:22+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-10-10T14:01:16+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-10-10T14:01:46+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-10-10T14:02:18+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-10-10T14:02:56+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2017-10-10T14:03:45+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-10-10T14:06:48+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-10-10T15:28:07+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-10-10T18:42:30+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-10-10T18:49:21+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-10-10T18:49:30+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Uploader&a=webuploader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-10-10T19:31:05+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Uploader&a=webuploader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /webdocs/28sjw.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-10-10T20:35:31+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2017-10-10T20:37:03+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Uploader&a=webuploader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /webdocs/28sjw.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-10-10T20:37:23+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2017-10-10T20:37:41+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Uploader&a=webuploader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /webdocs/28sjw.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-10-10T20:47:24+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-10-10T20:49:12+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Uploader&a=webuploader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /webdocs/28sjw.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-10-10T20:49:42+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0005s ]
+SQL: INSERT INTO `tp_product` (`from`,`to`,`price`,`start_at`,`end_at`,`big_pic`,`sma_pic`,`fee_desc`,`trip_desc`,`order_desc`,`add_at`) VALUES ('北京','东京','1400','1507639694','1509454096','./Statics/Uploads/2017-10-10/59dcc1c80d7a8.jpg','./Statics/Uploads/2017-10-10/thumb_59dcc1c80d7a8.jpg','&lt;p&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0001.gif&quot;/&gt;&lt;/p&gt;','&lt;p&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0002.gif&quot;/&gt;&lt;/p&gt;','&lt;p&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0003.gif&quot;/&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0068.gif&quot;/&gt;&lt;/p&gt;','1507639782') [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-10-10T20:49:49+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0005s ]
+SQL: INSERT INTO `tp_product` (`from`,`to`,`price`,`start_at`,`end_at`,`big_pic`,`sma_pic`,`fee_desc`,`trip_desc`,`order_desc`,`add_at`) VALUES ('北京','东京','1400','1507639694','1509454096','./Statics/Uploads/2017-10-10/59dcc1c80d7a8.jpg','./Statics/Uploads/2017-10-10/thumb_59dcc1c80d7a8.jpg','&lt;p&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0001.gif&quot;/&gt;&lt;/p&gt;','&lt;p&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0002.gif&quot;/&gt;&lt;/p&gt;','&lt;p&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0003.gif&quot;/&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0068.gif&quot;/&gt;&lt;/p&gt;','1507639789') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-10-10T20:51:02+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-10-10T20:51:32+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Uploader&a=webuploader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /webdocs/28sjw.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-10-10T20:52:02+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0005s ]
+SQL: INSERT INTO `tp_product` (`title`,`from`,`to`,`type_id`,`price`,`start_at`,`end_at`,`big_pic`,`sma_pic`,`fee_desc`,`trip_desc`,`order_desc`,`add_at`) VALUES ('【爱游推荐】日本东京+箱根+京都+大阪5晚6日优质游','北京','东京','3','2000','1509022278','1510404678','./Statics/Uploads/2017-10-10/59dcc2547e36e.jpg','./Statics/Uploads/2017-10-10/thumb_59dcc2547e36e.jpg','&lt;h5 style=&quot;box-sizing: border-box; font-family: 微软雅黑; line-height: 28px; color: rgb(51, 51, 51); margin: 10px 15px; font-size: 14px; padding-left: 5px; padding-right: 5px; background-color: rgb(245, 245, 245); border-left: 3px solid rgb(80, 180, 0); white-space: normal;&quot;&gt;费用包含&lt;/h5&gt;&lt;ol style=&quot;box-sizing: border-box; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;机 票：交通全程往返团队经济舱机票含税费（团队机票一经开出，不得更改、 不得签转、不得退票，如根据航空公司或出境社规定，机票可签转、改期或退票， 我司可协助处理）&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;酒 店：行程中所列酒店或同类别酒店双人标准间.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;酒店备注：前台呈现价格为普通房，如需海景房需加钱升级&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;挪亚方舟门票+黄金大礼包&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h5 style=&quot;box-sizing: border-box; font-family: 微软雅黑; line-height: 28px; color: rgb(51, 51, 51); margin: 10px 15px; font-size: 14px; padding-left: 5px; padding-right: 5px; background-color: rgb(245, 245, 245); border-left: 3px solid rgb(80, 180, 0); white-space: normal;&quot;&gt;自理费用&lt;/h5&gt;&lt;ol style=&quot;box-sizing: border-box; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;《往来港澳通行证》及有效签注&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;单房差：个人全程单房差现询.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;交通：出发地至集合地的交通等非行程安排的交通。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;个人消费：购物等个人消费以及因个人疏忽、违章或违法引起的经济损失或赔偿费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;行李费：全程额外行李托运及超重费用；境外内陆段行李托运及超重费用。南丫岛露营500元/人（2人起订）,酒店至南丫岛专车接送服务270元/人（4人及以上优惠价），500元/人（2人订购价格）&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;保险费：建议购买旅游人身意外保险。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;航空公司临时调整燃油附加税及相关费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;因交通延阻、战争、政变、罢工、天气、飞机机器故障、航班取消或更改时间等不可抗力原因所引致的额外费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出入境个人物品海关征税。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;其他行程中以及上述“费用包含”条款中未列明的一切额外费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;香港迪士尼乐园三合一餐券午餐+晚餐+小食亭饮品212元/人；香港迪士尼乐园1日门票家庭套票（2大1小）1300元，活力巴士往返接送机150元/人（香港机场-香港如心海景酒店活力巴士）&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h5 style=&quot;box-sizing: border-box; font-family: 微软雅黑; line-height: 28px; color: rgb(51, 51, 51); margin: 10px 15px; font-size: 14px; padding-left: 5px; padding-right: 5px; background-color: rgb(245, 245, 245); border-left: 3px solid rgb(80, 180, 0); white-space: normal;&quot;&gt;退规说明&lt;/h5&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;旅游者在出发前30 日内（含第30 日，下同）提出解除协议的，应当按下列标准向同程旅游支付业务损失费，(下述时间的计算不包括双休日及法定节假日)：&lt;/p&gt;&lt;ol style=&quot;box-sizing: border-box; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;备注一：以上条款约定比例扣除的必要的费用低于实际发生的费用，旅游者按照实际发生的费用支付，但最高额不应当超过旅游费用总额。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;备注二：出境社提供的机票系团队机票或出境社与航空公司约定不签转、改期或退票的机票，不得签转、更改或退票。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出境社在出发前30 日以内（含第30日，下同）提出解除协议的，向旅游者退还全额旅游费用（不得扣除签证／签注等费用），并按下列标准向旅游者支付违约金：（免签/落地签）&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前30 日至15 日，支付旅游费用总额2%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前14 日至7 日，支付旅游费用总额5%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前6 日至4 日，支付旅游费用总额10%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前3 日至1 日，支付旅游费用总额15%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发当日，支付旅游费用总额20%的违约金。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','&lt;h5 style=&quot;box-sizing: border-box; font-family: 微软雅黑; line-height: 28px; color: rgb(51, 51, 51); margin: 10px 15px; font-size: 14px; padding-left: 5px; padding-right: 5px; background-color: rgb(245, 245, 245); border-left: 3px solid rgb(80, 180, 0); white-space: normal;&quot;&gt;费用包含&lt;/h5&gt;&lt;ol style=&quot;box-sizing: border-box; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;机 票：交通全程往返团队经济舱机票含税费（团队机票一经开出，不得更改、 不得签转、不得退票，如根据航空公司或出境社规定，机票可签转、改期或退票， 我司可协助处理）&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;酒 店：行程中所列酒店或同类别酒店双人标准间.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;酒店备注：前台呈现价格为普通房，如需海景房需加钱升级&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;挪亚方舟门票+黄金大礼包&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h5 style=&quot;box-sizing: border-box; font-family: 微软雅黑; line-height: 28px; color: rgb(51, 51, 51); margin: 10px 15px; font-size: 14px; padding-left: 5px; padding-right: 5px; background-color: rgb(245, 245, 245); border-left: 3px solid rgb(80, 180, 0); white-space: normal;&quot;&gt;自理费用&lt;/h5&gt;&lt;ol style=&quot;box-sizing: border-box; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;《往来港澳通行证》及有效签注&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;单房差：个人全程单房差现询.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;交通：出发地至集合地的交通等非行程安排的交通。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;个人消费：购物等个人消费以及因个人疏忽、违章或违法引起的经济损失或赔偿费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;行李费：全程额外行李托运及超重费用；境外内陆段行李托运及超重费用。南丫岛露营500元/人（2人起订）,酒店至南丫岛专车接送服务270元/人（4人及以上优惠价），500元/人（2人订购价格）&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;保险费：建议购买旅游人身意外保险。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;航空公司临时调整燃油附加税及相关费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;因交通延阻、战争、政变、罢工、天气、飞机机器故障、航班取消或更改时间等不可抗力原因所引致的额外费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出入境个人物品海关征税。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;其他行程中以及上述“费用包含”条款中未列明的一切额外费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;香港迪士尼乐园三合一餐券午餐+晚餐+小食亭饮品212元/人；香港迪士尼乐园1日门票家庭套票（2大1小）1300元，活力巴士往返接送机150元/人（香港机场-香港如心海景酒店活力巴士）&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h5 style=&quot;box-sizing: border-box; font-family: 微软雅黑; line-height: 28px; color: rgb(51, 51, 51); margin: 10px 15px; font-size: 14px; padding-left: 5px; padding-right: 5px; background-color: rgb(245, 245, 245); border-left: 3px solid rgb(80, 180, 0); white-space: normal;&quot;&gt;退规说明&lt;/h5&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;旅游者在出发前30 日内（含第30 日，下同）提出解除协议的，应当按下列标准向同程旅游支付业务损失费，(下述时间的计算不包括双休日及法定节假日)：&lt;/p&gt;&lt;ol style=&quot;box-sizing: border-box; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;备注一：以上条款约定比例扣除的必要的费用低于实际发生的费用，旅游者按照实际发生的费用支付，但最高额不应当超过旅游费用总额。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;备注二：出境社提供的机票系团队机票或出境社与航空公司约定不签转、改期或退票的机票，不得签转、更改或退票。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出境社在出发前30 日以内（含第30日，下同）提出解除协议的，向旅游者退还全额旅游费用（不得扣除签证／签注等费用），并按下列标准向旅游者支付违约金：（免签/落地签）&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前30 日至15 日，支付旅游费用总额2%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前14 日至7 日，支付旅游费用总额5%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前6 日至4 日，支付旅游费用总额10%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前3 日至1 日，支付旅游费用总额15%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发当日，支付旅游费用总额20%的违约金。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','&lt;h5 style=&quot;box-sizing: border-box; font-family: 微软雅黑; line-height: 28px; color: rgb(51, 51, 51); margin: 10px 15px; font-size: 14px; padding-left: 5px; padding-right: 5px; background-color: rgb(245, 245, 245); border-left: 3px solid rgb(80, 180, 0); white-space: normal;&quot;&gt;费用包含&lt;/h5&gt;&lt;ol style=&quot;box-sizing: border-box; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;机 票：交通全程往返团队经济舱机票含税费（团队机票一经开出，不得更改、 不得签转、不得退票，如根据航空公司或出境社规定，机票可签转、改期或退票， 我司可协助处理）&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;酒 店：行程中所列酒店或同类别酒店双人标准间.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;酒店备注：前台呈现价格为普通房，如需海景房需加钱升级&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;挪亚方舟门票+黄金大礼包&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h5 style=&quot;box-sizing: border-box; font-family: 微软雅黑; line-height: 28px; color: rgb(51, 51, 51); margin: 10px 15px; font-size: 14px; padding-left: 5px; padding-right: 5px; background-color: rgb(245, 245, 245); border-left: 3px solid rgb(80, 180, 0); white-space: normal;&quot;&gt;自理费用&lt;/h5&gt;&lt;ol style=&quot;box-sizing: border-box; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;《往来港澳通行证》及有效签注&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;单房差：个人全程单房差现询.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;交通：出发地至集合地的交通等非行程安排的交通。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;个人消费：购物等个人消费以及因个人疏忽、违章或违法引起的经济损失或赔偿费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;行李费：全程额外行李托运及超重费用；境外内陆段行李托运及超重费用。南丫岛露营500元/人（2人起订）,酒店至南丫岛专车接送服务270元/人（4人及以上优惠价），500元/人（2人订购价格）&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;保险费：建议购买旅游人身意外保险。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;航空公司临时调整燃油附加税及相关费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;因交通延阻、战争、政变、罢工、天气、飞机机器故障、航班取消或更改时间等不可抗力原因所引致的额外费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出入境个人物品海关征税。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;其他行程中以及上述“费用包含”条款中未列明的一切额外费用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;香港迪士尼乐园三合一餐券午餐+晚餐+小食亭饮品212元/人；香港迪士尼乐园1日门票家庭套票（2大1小）1300元，活力巴士往返接送机150元/人（香港机场-香港如心海景酒店活力巴士）&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h5 style=&quot;box-sizing: border-box; font-family: 微软雅黑; line-height: 28px; color: rgb(51, 51, 51); margin: 10px 15px; font-size: 14px; padding-left: 5px; padding-right: 5px; background-color: rgb(245, 245, 245); border-left: 3px solid rgb(80, 180, 0); white-space: normal;&quot;&gt;退规说明&lt;/h5&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;旅游者在出发前30 日内（含第30 日，下同）提出解除协议的，应当按下列标准向同程旅游支付业务损失费，(下述时间的计算不包括双休日及法定节假日)：&lt;/p&gt;&lt;ol style=&quot;box-sizing: border-box; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;出发前30 日至27 日，按旅游费用总额5%；&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;备注一：以上条款约定比例扣除的必要的费用低于实际发生的费用，旅游者按照实际发生的费用支付，但最高额不应当超过旅游费用总额。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;备注二：出境社提供的机票系团队机票或出境社与航空公司约定不签转、改期或退票的机票，不得签转、更改或退票。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出境社在出发前30 日以内（含第30日，下同）提出解除协议的，向旅游者退还全额旅游费用（不得扣除签证／签注等费用），并按下列标准向旅游者支付违约金：（免签/落地签）&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前30 日至15 日，支付旅游费用总额2%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前14 日至7 日，支付旅游费用总额5%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前6 日至4 日，支付旅游费用总额10%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发前3 日至1 日，支付旅游费用总额15%的违约金；&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; text-indent: 28px; color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;出发当日，支付旅游费用总额20%的违约金。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1507639922') [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-10-10T20:52:29+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-10-10T20:52:50+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-10-10T20:52:57+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Type&a=typeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `tp_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_type`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-10-10T20:52:58+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=productList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+ERR: 模板不存在:./Application/Admin/View/Product/productList.html
+
+[ 2017-10-10T21:01:29+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-10-10T21:01:29+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+

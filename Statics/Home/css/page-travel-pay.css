@@ -1,0 +1,116 @@
+/*
+ * colors variables
+ */
+.travel-pay {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+.travel-pay .header {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.travel-pay .header .logo {
+  line-height: 60px;
+  font-size: 13px;
+}
+
+.travel-pay .header .logo img {
+  width: 150px;
+}
+
+.travel-pay .header .logo .pull-right .btn-exit {
+  padding: 0 4px;
+  border: 1px solid #ddd;
+  color: #333;
+  text-decoration: none;
+}
+
+.travel-pay .header .logo .pull-right .btn-exit:hover {
+  background-color: #f63;
+  color: #fff;
+}
+
+.travel-pay .header .logo .pull-right em {
+  font-style: normal;
+}
+
+.travel-pay .pay-box {
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-top-color: #f63;
+  border-top-width: 2px;
+}
+
+.travel-pay .pay-box .pay-title {
+  padding: 5px 10px;
+  line-height: 36px;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+.travel-pay .pay-box .pay-title .title-name span {
+  font-size: 12px;
+}
+
+.travel-pay .pay-box .pay-title .all-price {
+  color: #f63;
+  font-size: 18px;
+}
+
+.travel-pay .pay-box .pay-order,
+.travel-pay .pay-box .pay-info {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.travel-pay .pay-box .pay-order li,
+.travel-pay .pay-box .pay-info li {
+  line-height: 28px;
+}
+
+.travel-pay .pay-box .pay-order {
+  border-bottom: 1px dashed #ddd;
+}
+
+.travel-pay .pay-box p {
+  padding-left: 15px;
+}
+
+.travel-pay .pay-box p .pay-time {
+  color: #f63;
+}
+
+.travel-pay .pay-btns {
+  overflow: hidden;
+  margin: 10px 0;
+  line-height: 36px;
+  text-align: center;
+}
+
+.travel-pay .pay-btns .btn-pay {
+  padding: 6px 20px;
+  margin-right: 10px;
+  background-color: #f63;
+  color: #fff;
+  text-decoration: none;
+}
+
+.travel-pay .pay-btns .btn-pay:hover {
+  background-color: #D45B26;
+}
+
+.travel-pay .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  height: 38px;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
